@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The EScooter Doc — Peterborough</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=Inter:wght@400;500&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:   #1C2526;
+      --grey:    #243030;
+      --mid:     #3A4F50;
+      --volt:    #29A8D8;
+      --white:   #F2F0EB;
+      --dim:     #8DA8AA;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 2.5rem;
+      background: rgba(28,37,38,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--mid);
+    }
+    .logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 900;
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .logo span { color: #29A8D8; }
+    nav ul {
+      display: flex; gap: 2rem; list-style: none;
+    }
+    nav a {
+      color: var(--dim);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--white); }
+    .nav-cta {
+      background: #F0A500;
+      color: #1C2526 !important;
+      padding: 0.5rem 1.25rem;
+      border-radius: 2rem;
+      font-weight: 700 !important;
+      transition: opacity 0.2s !important;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 0 2.5rem 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* SVG spark line */
+    .spark-wrap {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 100%;
+      pointer-events: none;
+    }
+    .spark-path {
+      stroke: #29A8D8;
+      stroke-width: 1.5;
+      fill: none;
+      opacity: 0.35;
+      stroke-dasharray: 2000;
+      stroke-dashoffset: 2000;
+      animation: drawSpark 2.2s ease forwards 0.3s;
+    }
+    @keyframes drawSpark {
+      to { stroke-dashoffset: 0; }
+    }
+    .spark-glow {
+      stroke: #29A8D8;
+      stroke-width: 6;
+      fill: none;
+      opacity: 0;
+      filter: blur(4px);
+      stroke-dasharray: 2000;
+      stroke-dashoffset: 2000;
+      animation: drawSpark 2.2s ease forwards 0.3s, glowPulse 3s ease-in-out infinite 2.5s;
+    }
+    @keyframes glowPulse {
+      0%, 100% { opacity: 0.08; }
+      50% { opacity: 0.2; }
+    }
+
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #F0A500;
+      margin-bottom: 1.25rem;
+      font-weight: 500;
+      animation: fadeUp 0.6s ease both 1s;
+    }
+    .hero-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(3rem, 9vw, 8rem);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 900px;
+      animation: fadeUp 0.6s ease both 1.2s;
+    }
+    .hero-title em {
+      font-style: normal;
+      color: #F0A500;
+    }
+    .hero-sub {
+      margin-top: 2rem;
+      max-width: 500px;
+      color: var(--dim);
+      font-size: 1.05rem;
+      animation: fadeUp 0.6s ease both 1.4s;
+    }
+    .hero-actions {
+      display: flex; gap: 1rem; align-items: center;
+      margin-top: 2.5rem;
+      animation: fadeUp 0.6s ease both 1.6s;
+    }
+    .btn-primary {
+      background: #F0A500;
+      color: #1C2526;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0.85rem 2rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-ghost {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 0.95rem;
+      display: flex; align-items: center; gap: 0.4rem;
+      border-bottom: 1px solid var(--mid);
+      padding-bottom: 0.1rem;
+      transition: border-color 0.2s;
+    }
+    .btn-ghost:hover { border-color: var(--white); }
+
+    .hero-stats {
+      position: absolute;
+      right: 2.5rem; bottom: 5rem;
+      display: flex; flex-direction: column; gap: 1.5rem;
+      text-align: right;
+      animation: fadeUp 0.6s ease both 1.8s;
+    }
+    .stat-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: #F0A500;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.78rem;
+      color: var(--dim);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── TICKER ── */
+    .ticker {
+      background: #F0A500;
+      color: #1C2526;
+      padding: 0.7rem 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .ticker-track {
+      display: inline-flex;
+      animation: ticker 22s linear infinite;
+    }
+    .ticker-item {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0 2.5rem;
+    }
+    .ticker-dot {
+      opacity: 0.5;
+      margin-right: -2rem;
+    }
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ── SECTION COMMON ── */
+    section { padding: 6rem 2.5rem; }
+    .section-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #29A8D8;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      max-width: 700px;
+    }
+
+    /* ── SERVICES ── */
+    #services { background: var(--grey); }
+    .services-header {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      margin-bottom: 3.5rem;
+      flex-wrap: wrap; gap: 1.5rem;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5px;
+      background: var(--mid);
+      border: 1.5px solid var(--mid);
+    }
+    .service-card {
+      background: var(--grey);
+      padding: 2.5rem 2rem;
+      transition: background 0.25s;
+      cursor: default;
+    }
+    .service-card:hover { background: #222; }
+    .service-icon {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+    .service-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+    .service-desc {
+      color: var(--dim);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .service-price {
+      margin-top: 1.5rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #F0A500;
+    }
+
+    /* ── HOW IT WORKS ── */
+    #how {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 6rem 2.5rem;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0;
+      margin-top: 3.5rem;
+      position: relative;
+    }
+    .steps::before {
+      content: '';
+      position: absolute;
+      top: 2.2rem; left: 2rem; right: 2rem;
+      height: 1px;
+      background: var(--mid);
+    }
+    .step {
+      padding: 0 1.5rem 2rem 0;
+      position: relative;
+    }
+    .step-num {
+      width: 44px; height: 44px;
+      background: var(--black);
+      border: 1.5px solid #F0A500;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 900;
+      font-size: 0.9rem;
+      color: #F0A500;
+      margin-bottom: 1.5rem;
+      position: relative; z-index: 1;
+    }
+    .step-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .step-desc { color: var(--dim); font-size: 0.9rem; }
+
+    /* ── WHY US ── */
+    #why { background: var(--grey); padding: 6rem 2.5rem; }
+    .why-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      align-items: center;
+    }
+    .why-visual {
+      background: var(--black);
+      border: 1.5px solid var(--mid);
+      border-radius: 1rem;
+      padding: 3rem;
+      display: flex; flex-direction: column; gap: 1.5rem;
+    }
+    .meter-label {
+      display: flex; justify-content: space-between;
+      font-size: 0.85rem; color: var(--dim);
+      margin-bottom: 0.4rem;
+    }
+    .meter-bar {
+      height: 6px;
+      background: var(--mid);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .meter-fill {
+      height: 100%;
+      background: #29A8D8;
+      border-radius: 3px;
+      width: 0;
+      transition: width 1.2s ease;
+    }
+    .why-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; }
+    .why-list li {
+      display: flex; gap: 0.75rem; align-items: flex-start;
+      font-size: 0.95rem; color: var(--dim);
+    }
+    .why-list li::before {
+      content: '✓';
+      color: #29A8D8;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 0.05rem;
+    }
+
+    /* ── TESTIMONIALS ── */
+    #reviews { padding: 6rem 2.5rem; }
+    .reviews-inner { max-width: 1100px; margin: 0 auto; }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .review-card {
+      background: var(--grey);
+      border: 1.5px solid var(--mid);
+      border-radius: 0.75rem;
+      padding: 2rem;
+    }
+    .stars { color: #F0A500; font-size: 1rem; margin-bottom: 1rem; }
+    .review-text { color: var(--dim); font-size: 0.95rem; line-height: 1.7; }
+    .reviewer {
+      margin-top: 1.5rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .reviewer-model { color: var(--dim); font-weight: 400; font-size: 0.8rem; }
+
+    /* ── CONTACT ── */
+    #contact {
+      background: #F0A500;
+      color: #1C2526;
+      text-align: center;
+      padding: 6rem 2.5rem;
+    }
+    #contact .section-label { color: rgba(28,37,38,0.5); }
+    #contact .section-title { color: #1C2526; margin: 0 auto; }
+    .contact-sub { margin: 1.25rem auto 0; max-width: 480px; color: rgba(28,37,38,0.65); font-size: 1rem; }
+    .contact-grid {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .contact-item {
+      background: rgba(0,0,0,0.08);
+      border-radius: 0.75rem;
+      padding: 1.5rem 2rem;
+      min-width: 180px;
+    }
+    .contact-item-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.5;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+    }
+    .contact-item-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .contact-btn {
+      display: inline-block;
+      margin-top: 2.5rem;
+      background: #1C2526;
+      color: #29A8D8;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 1rem 2.5rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .contact-btn:hover { opacity: 0.85; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--black);
+      border-top: 1px solid var(--mid);
+      padding: 2rem 2.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-copy { color: var(--dim); font-size: 0.82rem; }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { color: var(--dim); font-size: 0.82rem; text-decoration: none; }
+    .footer-links a:hover { color: var(--white); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      .hero { padding-bottom: 3.5rem; }
+      .hero-stats { position: static; flex-direction: row; gap: 2rem; margin-top: 2rem; text-align: left; }
+      .steps::before { display: none; }
+      .why-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      footer { flex-direction: column; text-align: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .spark-path, .spark-glow { animation: none; stroke-dashoffset: 0; }
+      .ticker-track { animation: none; }
+      * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo"><img src="logo.png" alt="The E-Scooter Doc" style="height:52px; width:auto; display:block;"></a>
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#how">Process</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="https://wa.me/447597772452?text=Hi%2C%20I%27d%20like%20to%20book%20a%20repair%20with%20The%20E-Scooter%20Doc" target="_blank" class="nav-cta">💬 Book via WhatsApp</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <svg class="spark-wrap" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path class="spark-glow" d="M-20,820 L120,700 L200,740 L320,580 L400,620 L520,440 L640,490 L720,320 L860,390 L940,200 L1060,270 L1180,110 L1300,180 L1460,60"/>
+    <path class="spark-path" d="M-20,820 L120,700 L200,740 L320,580 L400,620 L520,440 L640,490 L720,320 L860,390 L940,200 L1060,270 L1180,110 L1300,180 L1460,60"/>
+  </svg>
+
+  <p class="hero-eyebrow">Escooter & e-bike electrical repair — Peterborough</p>
+  <h1 class="hero-title">
+    Back on the<br><em>road</em> fast.
+  </h1>
+  <p class="hero-sub">Expert electrical repairs for escooters and e-bikes. Battery, motor, controller, tyres — same-day diagnostics, honest pricing.</p>
+  <div class="hero-actions">
+    <a href="https://wa.me/447597772452?text=Hi%2C%20I%27d%20like%20to%20book%20a%20repair%20with%20The%20E-Scooter%20Doc" target="_blank" class="btn-primary" style="display:flex;align-items:center;gap:0.5rem;">&#128172; WhatsApp us</a>
+    <a href="tel:07597772452" class="btn-ghost">📞 Call us</a>
+  </div>
+
+  <div class="hero-stats">
+    <div>
+      <div class="stat-num">48h</div>
+      <div class="stat-label">avg. turnaround</div>
+    </div>
+    <div>
+      <div class="stat-num">87+</div>
+      <div class="stat-label">five-star reviews</div>
+    </div>
+    <div>
+      <div class="stat-num">4.9★</div>
+      <div class="stat-label">customer rating</div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item">Battery replacement</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <span class="ticker-item">Motor diagnostics</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <span class="ticker-item">Tyres &amp; punctures</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <span class="ticker-item">Controller repair</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <span class="ticker-item">E-bike electrical</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <span class="ticker-item">Display &amp; wiring</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <span class="ticker-item">Xiaomi · Segway · Ninebot · Dualtron · Pure · KuKirin · Bosch · Shimano Steps</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <span class="ticker-item">🛵 Pick-up &amp; drop-off available</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item">Battery replacement</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <span class="ticker-item">Motor diagnostics</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <span class="ticker-item">Tyres &amp; punctures</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <span class="ticker-item">Controller repair</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <span class="ticker-item">E-bike electrical</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <span class="ticker-item">Display &amp; wiring</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <span class="ticker-item">Xiaomi · Segway · Ninebot · Dualtron · Pure · KuKirin · Bosch · Shimano Steps</span>
+    <span class="ticker-item ticker-dot">·</span>
+    <span class="ticker-item">🛵 Pick-up &amp; drop-off available</span>
+    <span class="ticker-item ticker-dot">·</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header">
+    <div>
+      <p class="section-label">What we fix</p>
+      <h2 class="section-title">Escooters &amp; e-bikes — electrical &amp; tyres only</h2>
+    </div>
+  </div>
+  <div style="background:#1a1a1a; border:1.5px solid #29A8D8; border-radius:0.6rem; padding:1rem 1.5rem; margin-bottom:2rem; display:flex; gap:0.75rem; align-items:flex-start;">
+    <span style="font-size:1.1rem; flex-shrink:0;">⚡</span>
+    <p style="font-size:0.9rem; color:#8A8A8A; line-height:1.6;"><strong style="color:#F0EFEA;">E-bikes welcome for electrical work and tyres.</strong> We specialise in the electrical drivetrain — battery, motor, controller, display, wiring, brakes, and tyre/puncture repairs. We do not carry out general bike maintenance (gears, derailleurs, or frame work).</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">🔋</span>
+      <div class="service-name">Battery & Charging</div>
+      <p class="service-desc">Cell replacement, BMS repair, range restoration, charging port replacement. We rebuild packs — not just swap them.</p>
+      <div class="service-price">From £30</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">⚡</span>
+      <div class="service-name">Motor & Controller</div>
+      <p class="service-desc">Hub motor rewinds, BLDC controller diagnostics, throttle and brake sensor calibration.</p>
+      <div class="service-price">From £40</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🛞</span>
+      <div class="service-name">Tyres & Tubes</div>
+      <p class="service-desc">Solid or air tyre fitting, puncture repair, inner tube replacement. Most jobs done while you wait.</p>
+      <div class="service-price">From £20</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🚲</span>
+      <div class="service-name">E-Bike Electrical</div>
+      <p class="service-desc">Battery replacement &amp; repair, motor (hub &amp; mid-drive), controller, display, wiring and brake repairs. <strong style="color:var(--white)">No gears, derailleurs or general bike mechanics</strong> — just electrics, brakes and tyres.</p>
+      <div class="service-price">From £35</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">📱</span>
+      <div class="service-name">Display & Electronics</div>
+      <p class="service-desc">Dashboard replacement, Bluetooth module repair, wiring harness fixes and waterproofing.</p>
+      <div class="service-price">From £35</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔩</span>
+      <div class="service-name">Frame & Folding Mechanism</div>
+      <p class="service-desc">Stem wobble fixes, folding latch replacement, deck crack repair and structural welding.</p>
+      <div class="service-price">From £30</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <p class="section-label">The process</p>
+  <h2 class="section-title">Drop off or we collect. We fix it. Pick up or we deliver.</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-title">Drop off — or we collect</div>
+      <p class="step-desc">Book an appointment first — then bring it in yourself or use our pick-up service and we'll come to you.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-title">Free diagnostic</div>
+      <p class="step-desc">We run a full check and tell you exactly what's wrong — no jargon, no surprise charges.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-title">You approve the quote</div>
+      <p class="step-desc">We only start work when you say so. Fixed pricing, no hidden labour fees.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-title">Collect or we deliver</div>
+      <p class="step-desc">Pick it up from us, or we'll drop it back to you. We'll text you as soon as it's ready.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="why-inner">
+    <div>
+      <p class="section-label">Why The EScooter Doc</p>
+      <h2 class="section-title">Electric specialists — not a general bike shop</h2>
+      <ul class="why-list">
+        <li>Free diagnostic on every job — you only pay if you approve the fix</li>
+        <li>Certified technicians with 5+ years on electric drivetrains</li>
+        <li>Genuine and premium aftermarket parts in stock</li>
+        <li>90-day warranty on all parts and labour</li>
+        <li>Escooters: Xiaomi, Segway, Ninebot, Pure, Dualtron, KuKirin, Kaabo and more — E-bikes: Bosch, Bafang, Shimano Steps, Yamaha PW systems</li>
+        <li>Appointment only — contact us to book your slot</li>
+        <li>Pick-up and drop-off service available — we can collect your scooter or e-bike and return it once fixed</li>
+      </ul>
+    </div>
+    <div class="why-visual">
+      <p style="font-family:'Space Grotesk',sans-serif; font-weight:700; margin-bottom:0.5rem;">Average repair quality scores</p>
+      <p style="font-size:0.8rem; color:var(--dim); margin-bottom:1.5rem;">Based on 87+ completed jobs</p>
+      <div>
+        <div class="meter-label"><span>Speed of turnaround</span><span>96%</span></div>
+        <div class="meter-bar"><div class="meter-fill" data-w="96"></div></div>
+      </div>
+      <div>
+        <div class="meter-label"><span>First-fix rate</span><span>91%</span></div>
+        <div class="meter-bar"><div class="meter-fill" data-w="91"></div></div>
+      </div>
+      <div>
+        <div class="meter-label"><span>Customer satisfaction</span><span>98%</span></div>
+        <div class="meter-bar"><div class="meter-fill" data-w="98"></div></div>
+      </div>
+      <div>
+        <div class="meter-label"><span>Parts availability</span><span>89%</span></div>
+        <div class="meter-bar"><div class="meter-fill" data-w="89"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="reviews-inner">
+    <p class="section-label">Reviews</p>
+    <h2 class="section-title">What riders say</h2>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Great guy — replaced my tyre in under 30 minutes and the price was fair. Would highly recommend and will use again for any future issues."</p>
+        <div class="reviewer">Verified customer <span class="reviewer-model">· Peterborough</span></div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Took my son's scooter with a tyre issue and he had it sorted extremely quickly. Offered some valuable advice too. Superb value."</p>
+        <div class="reviewer">Local parent <span class="reviewer-model">· Peterborough</span></div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Amazing quick and friendly service. Fixed our e-scooter within a day. Highly recommended."</p>
+        <div class="reviewer">Happy customer <span class="reviewer-model">· Peterborough</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label">Get in touch</p>
+  <h2 class="section-title">Ready when you are</h2>
+  <p class="contact-sub">Walk-ins welcome. Call ahead for priority slots or large jobs.</p>
+  <div class="contact-grid">
+    <div class="contact-item">
+      <div class="contact-item-label">Phone</div>
+      <div class="contact-item-val">07597 772452</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Phone / WhatsApp</div>
+      <div class="contact-item-val">07597 772452</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Location</div>
+      <div class="contact-item-val">Westbury Dr, Peterborough PE7 8NQ</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Hours</div>
+      <div class="contact-item-val">Open 7 days a week</div>
+    </div>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-top:2.5rem;">
+  <a href="https://wa.me/447597772452?text=Hi%2C%20I%27d%20like%20to%20book%20a%20repair%20with%20The%20E-Scooter%20Doc" target="_blank" class="contact-btn" style="background:#25D366;color:#fff;">💬 WhatsApp us</a>
+  <a href="tel:07597772452" class="contact-btn">📞 Call David</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-copy">© 2026 The EScooter Doc. All rights reserved.</span>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+
+<script>
+  // Animate meter bars on scroll into view
+  const fills = document.querySelectorAll('.meter-fill');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.width = e.target.dataset.w + '%';
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  fills.forEach(f => obs.observe(f));
+</script>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/447597772452?text=Hi%2C%20I%27d%20like%20to%20book%20a%20repair%20with%20The%20E-Scooter%20Doc" target="_blank"
+   style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;
+          background:#25D366;color:#fff;
+          width:58px;height:58px;border-radius:50%;
+          display:flex;align-items:center;justify-content:center;
+          font-size:1.6rem;box-shadow:0 4px 16px rgba(0,0,0,0.35);
+          text-decoration:none;transition:transform 0.2s;"
+   onmouseover="this.style.transform='scale(1.1)'"
+   onmouseout="this.style.transform='scale(1)'"
+   aria-label="Chat on WhatsApp">&#128172;</a>
+</body>
+</html>
