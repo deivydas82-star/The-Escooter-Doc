@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S06Y9RRCVT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S06Y9RRCVT');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Scooter Display, Throttle & Wiring Repair Peterborough | The EScooter Doc</title>
+  <meta name="description" content="E-scooter display, throttle, e-brake and wiring repair in Peterborough. Fault finding, water damage repair, dashboard replacement. From £30.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "E-Scooter Display, Throttle & Wiring Repair",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "The EScooter Doc",
+      "url": "https://escooterdoc.co.uk",
+      "telephone": "+447597772452",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Westbury Drive",
+        "addressLocality": "Peterborough",
+        "postalCode": "PE7 8NQ",
+        "addressCountry": "GB"
+      }
+    },
+    "areaServed": "Peterborough",
+    "description": "E-scooter display, throttle, e-brake, wiring harness and fault finding repairs in Peterborough, including water damage investigation and repair.",
+    "offers": [
+      {"@type": "Offer", "name": "Dashboard / Display Repair or Replacement", "price": "30", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Throttle / Accelerator Replacement", "price": "35", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "E-Brake Lever or Sensor Repair", "price": "35", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Wiring Harness / Data Cable Repair", "price": "40", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Unknown Electrical Fault Finding", "price": "40", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Water Damage Investigation & Repair", "price": "40", "priceCurrency": "GBP"}
+    ]
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=Inter:wght@400;500&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #1C2526; --grey: #243030; --mid: #3A4F50;
+      --volt: #29A8D8; --white: #F2F0EB; --dim: #8DA8AA;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--black); color: var(--white); font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; overflow-x: hidden; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 2.5rem; background: rgba(28,37,38,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--mid); }
+    .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 900; font-size: 1.35rem; letter-spacing: -0.03em; color: var(--white); text-decoration: none; }
+    .logo span { color: #29A8D8; }
+    nav ul { display: flex; gap: 2rem; list-style: none; }
+    nav a { color: var(--dim); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; }
+    nav a:hover { color: var(--white); }
+    .nav-cta { background: #F0A500; color: #1C2526 !important; padding: 0.5rem 1.25rem; border-radius: 2rem; font-weight: 700 !important; }
+
+    .hero { min-height: 70vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 120px 2.5rem 5rem; position: relative; overflow: hidden; }
+    .hero-eyebrow { font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; color: #F0A500; margin-bottom: 1.25rem; font-weight: 500; }
+    .hero-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2.5rem, 7vw, 6rem); font-weight: 900; line-height: 0.95; letter-spacing: -0.04em; max-width: 800px; margin-bottom: 1.5rem; }
+    .hero-title em { font-style: normal; color: #F0A500; }
+    .hero-sub { max-width: 540px; color: var(--dim); font-size: 1.05rem; margin-bottom: 2.5rem; }
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .btn-primary { background: #F0A500; color: #1C2526; font-weight: 700; padding: 0.85rem 2rem; border-radius: 2rem; text-decoration: none; font-size: 1rem; transition: opacity 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-secondary { background: transparent; color: var(--white); font-weight: 600; padding: 0.85rem 2rem; border-radius: 2rem; text-decoration: none; font-size: 1rem; border: 1px solid var(--mid); transition: border-color 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; }
+    .btn-secondary:hover { border-color: var(--white); }
+
+    .price-strip { background: var(--grey); border-top: 1px solid var(--mid); border-bottom: 1px solid var(--mid); padding: 1.5rem 2.5rem; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
+    .price-item { text-align: center; }
+    .price-item .price-label { font-size: 0.8rem; color: var(--dim); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .price-item .price-val { font-family: 'Space Grotesk', sans-serif; font-weight: 900; font-size: 1.5rem; color: #F0A500; }
+
+    section { padding: 5rem 2.5rem; max-width: 1200px; margin: 0 auto; }
+    .section-label { font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: #29A8D8; margin-bottom: 0.75rem; font-weight: 500; }
+    .section-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 3rem; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+    .service-card { background: var(--grey); border: 1px solid var(--mid); border-radius: 1rem; padding: 2rem; transition: border-color 0.2s; }
+    .service-card:hover { border-color: #F0A500; }
+    .service-icon { font-size: 2rem; display: block; margin-bottom: 1rem; }
+    .service-name { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.1rem; margin-bottom: 0.75rem; }
+    .service-desc { color: var(--dim); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.6; }
+    .service-price { font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #F0A500; font-size: 1rem; }
+
+    .parts-note { background: var(--grey); border: 1px solid var(--mid); border-left: 3px solid #F0A500; border-radius: 0.75rem; padding: 1.5rem 2rem; margin-bottom: 3rem; color: var(--dim); font-size: 0.95rem; line-height: 1.7; }
+    .parts-note strong { color: var(--white); }
+
+    .faq-list { display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item { background: var(--grey); border: 1px solid var(--mid); border-radius: 0.75rem; padding: 1.5rem 2rem; }
+    .faq-q { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; margin-bottom: 0.75rem; color: var(--white); }
+    .faq-a { color: var(--dim); font-size: 0.9rem; line-height: 1.7; }
+
+    .brands-wrap { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
+    .brand-tag { background: var(--grey); border: 1px solid var(--mid); padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.85rem; color: var(--dim); }
+
+    .cta-section { background: var(--grey); border-top: 1px solid var(--mid); border-bottom: 1px solid var(--mid); padding: 4rem 2.5rem; text-align: center; }
+    .cta-section h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; letter-spacing: -0.03em; margin-bottom: 1rem; }
+    .cta-section p { color: var(--dim); margin-bottom: 2rem; font-size: 1.05rem; }
+    .cta-btns { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
+    .contact-item { background: var(--grey); border: 1px solid var(--mid); border-radius: 0.75rem; padding: 1.5rem; }
+    .contact-item-label { font-size: 0.75rem; color: var(--dim); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
+    .contact-item-val { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; }
+
+    footer { background: var(--grey); border-top: 1px solid var(--mid); padding: 2rem 2.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
+    .footer-copy { font-size: 0.8rem; color: var(--dim); }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-size: 0.8rem; color: var(--dim); text-decoration: none; }
+    .footer-links a:hover { color: var(--white); }
+
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      .hero { padding: 120px 1.5rem 3rem; }
+      section { padding: 3rem 1.5rem; }
+      .price-strip { padding: 1.5rem; gap: 1.5rem; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">The <span>E-Scooter</span> Doc</a>
+  <ul>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="motors.html">Motors</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="frame.html">Frame</a></li>
+    <li><a href="index.html#contact" class="nav-cta">💬 Book via WhatsApp</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <p class="hero-eyebrow">Display, Throttle & Wiring Repair — Peterborough</p>
+  <h1 class="hero-title">Display dead?<br>Throttle stuck?<br><em>We find it.</em></h1>
+  <p class="hero-sub">Display repair, throttle and e-brake faults, wiring harness and data cable repair, fault finding for unknown issues, and water damage investigation and repair.</p>
+  <div class="hero-btns">
+    <a href="https://wa.me/447597772452?text=Hi%2C%20I%20have%20a%20display%20or%20wiring%20issue%20with%20my%20e-scooter" target="_blank" class="btn-primary">💬 WhatsApp us</a>
+    <a href="tel:07597772452" class="btn-secondary">📞 Call David</a>
+  </div>
+</div>
+
+<div class="price-strip">
+  <div class="price-item">
+    <div class="price-label">Dashboard / Display</div>
+    <div class="price-val">From £30</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Throttle / Accelerator</div>
+    <div class="price-val">From £35</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">E-Brake Lever / Sensor</div>
+    <div class="price-val">From £35</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Wiring Harness / Data Cable</div>
+    <div class="price-val">From £40</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Unknown Fault Finding</div>
+    <div class="price-val">From £40</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Water Damage Repair</div>
+    <div class="price-val">From £40</div>
+  </div>
+</div>
+
+<section>
+  <p class="section-label">What we do</p>
+  <h2 class="section-title">Display, controls & wiring — every fault covered</h2>
+
+  <div class="parts-note">
+    <strong>Parts availability:</strong> Common displays, throttles and e-brake levers are stocked or quickly sourced for popular models. Specialist or older model parts may take longer to source — we'll always confirm before any work begins.
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">📱</span>
+      <div class="service-name">Dashboard / Display Repair or Replacement</div>
+      <p class="service-desc">Cracked screen, dead display, or showing error codes? We repair or replace the dashboard unit and make sure it's communicating properly with the controller.</p>
+      <div class="service-price">From £30</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🎚️</span>
+      <div class="service-name">Throttle / Accelerator Replacement</div>
+      <p class="service-desc">Sticky, unresponsive or faulty throttle? We replace the throttle assembly and calibrate it so power delivery feels smooth and predictable again.</p>
+      <div class="service-price">From £35</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">✋</span>
+      <div class="service-name">Faulty E-Brake Lever / Sensor</div>
+      <p class="service-desc">If your e-brake isn't cutting power correctly, or the lever feels wrong, it's a safety issue worth sorting fast. We repair or replace the lever or sensor and confirm it's cutting power as it should.</p>
+      <div class="service-price">From £35</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔌</span>
+      <div class="service-name">Wiring Harness / Data Cable Repair</div>
+      <p class="service-desc">Damaged, chafed or corroded wiring and data cables cause all sorts of intermittent faults. We trace the fault, repair or replace the affected wiring and protect it against future damage.</p>
+      <div class="service-price">From £40</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔍</span>
+      <div class="service-name">Unknown Electrical Fault Finding</div>
+      <p class="service-desc">Got an intermittent or unexplained fault that nobody else can pin down? We methodically test the full electrical system — battery, motor, controller, display and wiring — until we find the actual cause.</p>
+      <div class="service-price">From £40</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">💧</span>
+      <div class="service-name">Water Damage Investigation & Repair</div>
+      <p class="service-desc">Scooter been caught in the rain or ridden through deep water? We investigate for corrosion and water ingress across the electrical system and repair or clean and protect affected components.</p>
+      <div class="service-price">From £40</div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <p class="section-label">Common questions</p>
+  <h2 class="section-title">Display & wiring FAQ</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">My scooter has an error code on the display — what does it mean?</div>
+      <div class="faq-a">Error codes vary by brand and indicate different faults — battery, motor, controller or communication issues. Bring it in or send us a photo of the code via WhatsApp and we'll tell you what we think it means before booking you in.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">My scooter got rained on — should I worry?</div>
+      <div class="faq-a">Most modern e-scooters have some level of water resistance, but connectors and seals degrade over time. If it's still working fine after light rain, you're probably okay. If it's been through standing water, stopped working after rain, or you're seeing corrosion, get it checked sooner rather than later — water damage gets worse the longer it's left.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">I don't know what's wrong, it just stopped working — can you still help?</div>
+      <div class="faq-a">Yes, this is exactly what our fault finding service is for. We test through the whole electrical system methodically until we find the cause, rather than guessing and swapping parts.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">My throttle feels sticky or doesn't return properly — is that dangerous?</div>
+      <div class="faq-a">Yes, this should be treated as a safety issue and not ridden until fixed, since a stuck throttle can cause unintended acceleration. Book it in as soon as possible.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you need an appointment?</div>
+      <div class="faq-a">Yes — appointment only. Call or WhatsApp to book. For unknown faults it helps to describe exactly what happens (when it cuts out, any error codes, recent weather exposure) so we can prepare.</div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <p class="section-label">Compatible models</p>
+  <h2 class="section-title">We work on all major brands</h2>
+  <p style="color: var(--dim); margin-bottom: 1rem;">Parts availability varies by model. Call ahead and we'll check before your visit.</p>
+  <div class="brands-wrap">
+    <span class="brand-tag">Xiaomi</span>
+    <span class="brand-tag">Ninebot</span>
+    <span class="brand-tag">Segway</span>
+    <span class="brand-tag">Pure Electric</span>
+    <span class="brand-tag">Dualtron</span>
+    <span class="brand-tag">KuKirin</span>
+    <span class="brand-tag">Kaabo</span>
+    <span class="brand-tag">Inokim</span>
+    <span class="brand-tag">Vsett</span>
+    <span class="brand-tag">Zero</span>
+    <span class="brand-tag">Apollo</span>
+    <span class="brand-tag">Most other brands</span>
+  </div>
+</section>
+
+<div class="cta-section">
+  <h2>Something not working right? Let's find out why.</h2>
+  <p>Call or WhatsApp to book. We diagnose properly, not just swap parts.</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/447597772452?text=Hi%2C%20I%20have%20a%20display%20or%20wiring%20issue%20with%20my%20e-scooter" target="_blank" class="btn-primary" style="background:#25D366; color:#fff;">💬 WhatsApp us</a>
+    <a href="tel:07597772452" class="btn-primary">📞 Call David</a>
+    <a href="https://tally.so/r/Xx9rZ4" target="_blank" class="btn-secondary">🔧 Get a free quote</a>
+  </div>
+</div>
+
+<section>
+  <p class="section-label">Find us</p>
+  <h2 class="section-title">Based in Peterborough</h2>
+  <div class="contact-grid">
+    <div class="contact-item">
+      <div class="contact-item-label">Phone / WhatsApp</div>
+      <div class="contact-item-val">07597 772452</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Email</div>
+      <div class="contact-item-val">info@escooterdoc.co.uk</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Location</div>
+      <div class="contact-item-val">Westbury Dr, Peterborough PE7 8NQ</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Hours</div>
+      <div class="contact-item-val">Open 7 days a week</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-copy">© 2026 The EScooter Doc. All rights reserved.</span>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html">← Back to main site</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/447597772452?text=Hi%2C%20I%20have%20a%20display%20or%20wiring%20issue%20with%20my%20e-scooter" target="_blank"
+   style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 4px 16px rgba(0,0,0,0.35);text-decoration:none;transition:transform 0.2s;"
+   onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
+   aria-label="Chat on WhatsApp">&#128172;</a>
+
+</body>
+</html>

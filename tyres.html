@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S06Y9RRCVT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S06Y9RRCVT');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Scooter Tyre Repair & Replacement Peterborough | The EScooter Doc</title>
+  <meta name="description" content="E-scooter tyre repair and replacement in Peterborough. Puncture repair, inner tube replacement, solid tyre fitting, air tyre swap. Most jobs done while you wait. From £20.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "E-Scooter Tyre Repair & Replacement",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "The EScooter Doc",
+      "url": "https://escooterdoc.co.uk",
+      "telephone": "+447597772452",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Westbury Drive",
+        "addressLocality": "Peterborough",
+        "postalCode": "PE7 8NQ",
+        "addressCountry": "GB"
+      }
+    },
+    "areaServed": "Peterborough",
+    "description": "E-scooter and e-bike tyre repair and replacement in Peterborough. Puncture repair, inner tube replacement, solid tyre fitting and air tyre replacement.",
+    "offers": [
+      {"@type": "Offer", "name": "Puncture Repair", "price": "20", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Inner Tube Replacement", "price": "25", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Solid Tyre Fitting", "price": "30", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Air Tyre Replacement", "price": "25", "priceCurrency": "GBP"}
+    ]
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=Inter:wght@400;500&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:   #1C2526;
+      --grey:    #243030;
+      --mid:     #3A4F50;
+      --volt:    #29A8D8;
+      --white:   #F2F0EB;
+      --dim:     #8DA8AA;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 2.5rem;
+      background: rgba(28,37,38,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--mid);
+    }
+    .logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 900;
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .logo span { color: #29A8D8; }
+    nav ul { display: flex; gap: 2rem; list-style: none; }
+    nav a {
+      color: var(--dim);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--white); }
+    .nav-cta {
+      background: #F0A500;
+      color: #1C2526 !important;
+      padding: 0.5rem 1.25rem;
+      border-radius: 2rem;
+      font-weight: 700 !important;
+      transition: opacity 0.2s !important;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* HERO */
+    .hero {
+      min-height: 70vh;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 0 2.5rem 5rem;
+      position: relative;
+      overflow: hidden;
+      padding-top: 120px;
+    }
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #F0A500;
+      margin-bottom: 1.25rem;
+      font-weight: 500;
+    }
+    .hero-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.5rem, 7vw, 6rem);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 800px;
+      margin-bottom: 1.5rem;
+    }
+    .hero-title em { font-style: normal; color: #F0A500; }
+    .hero-sub {
+      max-width: 520px;
+      color: var(--dim);
+      font-size: 1.05rem;
+      margin-bottom: 2.5rem;
+    }
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .btn-primary {
+      background: #F0A500;
+      color: #1C2526;
+      font-weight: 700;
+      padding: 0.85rem 2rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: opacity 0.2s;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+    }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      font-weight: 600;
+      padding: 0.85rem 2rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-size: 1rem;
+      border: 1px solid var(--mid);
+      transition: border-color 0.2s;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+    }
+    .btn-secondary:hover { border-color: var(--white); }
+
+    /* PRICE STRIP */
+    .price-strip {
+      background: var(--grey);
+      border-top: 1px solid var(--mid);
+      border-bottom: 1px solid var(--mid);
+      padding: 1.5rem 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .price-item {
+      text-align: center;
+    }
+    .price-item .price-label {
+      font-size: 0.8rem;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.25rem;
+    }
+    .price-item .price-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: #F0A500;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 5rem 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-label {
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #29A8D8;
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 3rem;
+    }
+
+    /* SERVICE CARDS */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      border-radius: 1rem;
+      padding: 2rem;
+      transition: border-color 0.2s;
+    }
+    .service-card:hover { border-color: #F0A500; }
+    .service-icon { font-size: 2rem; display: block; margin-bottom: 1rem; }
+    .service-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    .service-desc { color: var(--dim); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.6; }
+    .service-price {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      color: #F0A500;
+      font-size: 1rem;
+    }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      border-radius: 0.75rem;
+      padding: 1.5rem 2rem;
+    }
+    .faq-q {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+      color: var(--white);
+    }
+    .faq-a { color: var(--dim); font-size: 0.9rem; line-height: 1.7; }
+
+    /* BRANDS */
+    .brands-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+    .brand-tag {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      padding: 0.4rem 1rem;
+      border-radius: 2rem;
+      font-size: 0.85rem;
+      color: var(--dim);
+    }
+
+    /* REVIEWS */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .review-card {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      border-radius: 1rem;
+      padding: 1.75rem;
+    }
+    .stars { color: #F0A500; font-size: 1.1rem; margin-bottom: 1rem; }
+    .review-text { color: var(--dim); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; font-style: italic; }
+    .reviewer { font-size: 0.8rem; color: var(--dim); }
+    .reviewer-model { color: var(--mid); }
+
+    /* CTA SECTION */
+    .cta-section {
+      background: var(--grey);
+      border-top: 1px solid var(--mid);
+      border-bottom: 1px solid var(--mid);
+      padding: 4rem 2.5rem;
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+    }
+    .cta-section p { color: var(--dim); margin-bottom: 2rem; font-size: 1.05rem; }
+    .cta-btns { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+
+    /* CONTACT GRID */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .contact-item {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+    }
+    .contact-item-label { font-size: 0.75rem; color: var(--dim); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
+    .contact-item-val { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; }
+    .contact-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.9rem 2rem;
+      border-radius: 2rem;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      background: var(--grey);
+      color: var(--white);
+      border: 1px solid var(--mid);
+      transition: border-color 0.2s;
+    }
+    .contact-btn:hover { border-color: var(--white); }
+
+    /* FOOTER */
+    footer {
+      background: var(--grey);
+      border-top: 1px solid var(--mid);
+      padding: 2rem 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .footer-copy { font-size: 0.8rem; color: var(--dim); }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-size: 0.8rem; color: var(--dim); text-decoration: none; }
+    .footer-links a:hover { color: var(--white); }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      .hero { padding: 120px 1.5rem 3rem; }
+      section { padding: 3rem 1.5rem; }
+      .price-strip { padding: 1.5rem; gap: 1.5rem; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">The <span>E-Scooter</span> Doc</a>
+  <ul>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#how">Process</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="motors.html">Motors</a></li>
+    <li><a href="ebike.html">E-Bikes</a></li>
+    <li><a href="display.html">Display</a></li>
+    <li><a href="frame.html">Frame</a></li>
+    <li><a href="index.html#contact" class="nav-cta">💬 Book via WhatsApp</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="hero-eyebrow">E-Scooter & E-Bike Tyre Repair — Peterborough</p>
+  <h1 class="hero-title">Flat tyre?<br>Back rolling <em>fast.</em></h1>
+  <p class="hero-sub">Puncture repair, inner tube replacement, solid tyre fitting and air tyre swap. Most jobs done same day — many while you wait.</p>
+  <div class="hero-btns">
+    <a href="https://wa.me/447597772452?text=Hi%2C%20I%20need%20a%20tyre%20repair%20for%20my%20e-scooter" target="_blank" class="btn-primary">💬 WhatsApp us</a>
+    <a href="tel:07597772452" class="btn-secondary">📞 Call David</a>
+  </div>
+</div>
+
+<!-- PRICE STRIP -->
+<div class="price-strip">
+  <div class="price-item">
+    <div class="price-label">Puncture Repair / Inner Tube Replacement</div>
+    <div class="price-val">£30 — includes new inner tube</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Solid Tyre Fitting (labour only)</div>
+    <div class="price-val">8 inch £25 · 10 inch £30</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Tubeless Tyre Fitting (labour only)</div>
+    <div class="price-val">£30</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Air Tyre Replacement (labour only)</div>
+    <div class="price-val">8 inch & 10 inch £25 · 11 inch £30</div>
+  </div>
+</div>
+
+<!-- TYRE PRICE NOTICE -->
+<div style="background:#1C2526; border-top: 1px solid #3A4F50; border-bottom: 1px solid #3A4F50; padding: 1.25rem 2.5rem; text-align: center;">
+  <p style="color:#8DA8AA; font-size:0.9rem; max-width:700px; margin:0 auto;">
+    <strong style="color:#F0A500;">⚠ Please note:</strong> Fitting prices above are for labour only and do not include the cost of the new tyre. Tyre prices vary from <strong style="color:#F2F0EB;">£10 to £40</strong> depending on size, tread pattern and type (inner tube, tubeless or solid). We will always confirm the full price — parts and labour — before starting any work.
+  </p>
+</div>
+
+<!-- SERVICES -->
+<section>
+  <p class="section-label">What we do</p>
+  <h2 class="section-title">Every tyre job covered</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">🔧</span>
+      <div class="service-name">Puncture Repair / Inner Tube Replacement</div>
+      <p class="service-desc">Got a flat? We replace the inner tube — we don't patch tubes as patches aren't reliable long term. Price includes the new tube. Most common sizes stocked, many jobs done while you wait.</p>
+      <div class="service-price">£30 — includes new inner tube</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">⚫</span>
+      <div class="service-name">Solid (Airless) Tyre Fitting</div>
+      <p class="service-desc">Tired of punctures? Solid honeycomb tyres mean you will never get a flat again. Fitting price is for labour only — tyre cost is additional and varies by size and model. Available in 8 inch and 10 inch sizes.</p>
+      <div class="service-price">8 inch £25 · 10 inch £30 (labour only)</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔵</span>
+      <div class="service-name">Tubeless Tyre Fitting</div>
+      <p class="service-desc">Got a tubeless tyre that needs replacing? We swap the whole tyre — we do not attempt tubeless repairs as they are not reliable. Fitting price is for labour only — tyre cost is additional and varies by model.</p>
+      <div class="service-price">£30 (labour only)</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">💨</span>
+      <div class="service-name">Air Tyre Replacement</div>
+      <p class="service-desc">Full pneumatic tyre swap when the tread is worn or the tyre is damaged. Keeps your ride smooth and grip strong. Fitting price is for labour only — tyre cost is additional.</p>
+      <div class="service-price">8 inch & 10 inch £25 · 11 inch £30 (labour only)</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🚲</span>
+      <div class="service-name">E-Bike Tyre Service</div>
+      <p class="service-desc">Same tyre services for e-bikes — tube replacement, solid tyre fitting and full tyre swaps for most hub and mid-drive e-bikes. Electrics and tyres only, no general bike mechanics.</p>
+      <div class="service-price">From £25</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔍</span>
+      <div class="service-name">Tyre Inspection</div>
+      <p class="service-desc">Not sure what's wrong? We'll check tyre condition, pressure, valve and wheel for damage and advise on the best fix. Free with any tyre job.</p>
+      <div class="service-price">Free with repair</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding-top: 0;">
+  <p class="section-label">Common questions</p>
+  <h2 class="section-title">Tyre repair FAQ</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">How long does a tyre job take?</div>
+      <div class="faq-a">Inner tube replacements are done while you wait — usually 20 to 40 minutes. Solid tyre fitting takes longer, typically 1 to 2 hours, as the tyre needs to be pressed on carefully to avoid damaging the rim. Tubeless tyre swaps are similar to air tyre replacements — around 30 to 45 minutes.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Should I go solid or air tyres?</div>
+      <div class="faq-a">Solid tyres mean zero punctures ever — great for commuters on smooth roads. Air tyres give a much more comfortable ride and better grip, especially on uneven surfaces. If you're getting frequent punctures, solid is worth considering. We'll advise based on how and where you ride.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you stock tyres and tubes, or do I need to bring my own?</div>
+      <div class="faq-a">We stock inner tubes and the most common tyre sizes in-house so most jobs can be done same day. Less common sizes can usually be sourced next day — call ahead and we'll confirm availability before your visit. You don't need to source parts yourself.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you patch inner tubes or tubeless tyres?</div>
+      <div class="faq-a">No — we replace, not patch. Patches on inner tubes and tubeless tyres aren't reliable enough, especially at speed. For a puncture we replace the inner tube. For tubeless tyres we replace the whole tyre. It costs a little more but it's done properly and won't let you down.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do I need to book in advance?</div>
+      <div class="faq-a">Yes — appointment only. Call or WhatsApp to book a slot. Same-day appointments are often available for tyre jobs.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you offer pick-up and drop-off for tyre repairs?</div>
+      <div class="faq-a">Yes. If you can't get to us we can collect your scooter or e-bike and return it once the tyre is sorted. Ask about availability when booking.</div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section style="padding-top: 0;">
+  <p class="section-label">Compatible models</p>
+  <h2 class="section-title">We work on all major brands</h2>
+  <p style="color: var(--dim); margin-bottom: 1rem;">We stock inner tubes and common tyre sizes for most popular models. Less common sizes sourced next day — call ahead to confirm.</p>
+  <div class="brands-wrap">
+    <span class="brand-tag">Xiaomi</span>
+    <span class="brand-tag">Ninebot</span>
+    <span class="brand-tag">Segway</span>
+    <span class="brand-tag">Pure Electric</span>
+    <span class="brand-tag">Dualtron</span>
+    <span class="brand-tag">KuKirin</span>
+    <span class="brand-tag">Kaabo</span>
+    <span class="brand-tag">Inokim</span>
+    <span class="brand-tag">Mercane</span>
+    <span class="brand-tag">Zero</span>
+    <span class="brand-tag">Vsett</span>
+    <span class="brand-tag">Apollo</span>
+    <span class="brand-tag">Most other brands</span>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section style="padding-top: 0;">
+  <p class="section-label">Reviews</p>
+  <h2 class="section-title">What riders say about our tyre work</h2>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"Great guy — replaced my tyre in under 30 minutes and the price was fair. Would highly recommend and will use again for any future issues."</p>
+      <div class="reviewer">Verified customer <span class="reviewer-model">· Peterborough</span></div>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"Took my son's scooter with a tyre issue and he had it sorted extremely quickly. Offered some valuable advice too. Superb value."</p>
+      <div class="reviewer">Local parent <span class="reviewer-model">· Peterborough</span></div>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"Amazing quick and friendly service. Fixed our e-scooter within a day. Highly recommended."</p>
+      <div class="reviewer">Happy customer <span class="reviewer-model">· Peterborough</span></div>
+    </div>
+  </div>
+  <p style="text-align:center; margin-top:2rem; color:var(--dim); font-size:0.9rem;">90+ five-star reviews on Google · 4.9 rating</p>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <h2>Got a flat? Let's sort it.</h2>
+  <p>Call or WhatsApp to book. Same-day slots often available.</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/447597772452?text=Hi%2C%20I%20need%20a%20tyre%20repair%20for%20my%20e-scooter" target="_blank" class="btn-primary" style="background:#25D366; color:#fff;">💬 WhatsApp us</a>
+    <a href="tel:07597772452" class="btn-primary">📞 Call David</a>
+    <a href="https://tally.so/r/Xx9rZ4" target="_blank" class="btn-secondary">🔧 Get a free quote</a>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section>
+  <p class="section-label">Find us</p>
+  <h2 class="section-title">Based in Peterborough</h2>
+  <div class="contact-grid">
+    <div class="contact-item">
+      <div class="contact-item-label">Phone / WhatsApp</div>
+      <div class="contact-item-val">07597 772452</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Email</div>
+      <div class="contact-item-val">info@escooterdoc.co.uk</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Location</div>
+      <div class="contact-item-val">Westbury Dr, Peterborough PE7 8NQ</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Hours</div>
+      <div class="contact-item-val">Open 7 days a week</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-copy">© 2026 The EScooter Doc. All rights reserved.</span>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html">← Back to main site</a>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/447597772452?text=Hi%2C%20I%20need%20a%20tyre%20repair%20for%20my%20e-scooter" target="_blank"
+   style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;
+          background:#25D366;color:#fff;
+          width:58px;height:58px;border-radius:50%;
+          display:flex;align-items:center;justify-content:center;
+          font-size:1.6rem;box-shadow:0 4px 16px rgba(0,0,0,0.35);
+          text-decoration:none;transition:transform 0.2s;"
+   onmouseover="this.style.transform='scale(1.1)'"
+   onmouseout="this.style.transform='scale(1)'"
+   aria-label="Chat on WhatsApp">&#128172;</a>
+
+</body>
+</html>

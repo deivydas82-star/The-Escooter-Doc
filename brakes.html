@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S06Y9RRCVT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S06Y9RRCVT');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Scooter & E-Bike Brake Repair Peterborough | The EScooter Doc</title>
+  <meta name="description" content="E-scooter and e-bike brake repair in Peterborough. Brake pad replacement, hydraulic bleeding, caliper and rotor replacement, mechanical to hydraulic conversion. From £15.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "E-Scooter & E-Bike Brake Repair",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "The EScooter Doc",
+      "url": "https://escooterdoc.co.uk",
+      "telephone": "+447597772452",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Westbury Drive",
+        "addressLocality": "Peterborough",
+        "postalCode": "PE7 8NQ",
+        "addressCountry": "GB"
+      }
+    },
+    "areaServed": "Peterborough",
+    "description": "E-scooter and e-bike brake repair in Peterborough. Brake pad replacement, hydraulic brake bleeding, caliper and disc rotor replacement, mechanical to hydraulic conversion.",
+    "offers": [
+      {"@type": "Offer", "name": "Brake Pad Replacement", "price": "15", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Brake Adjustment", "price": "15", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Hydraulic Brake Bleed", "price": "25", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Caliper Replacement", "price": "30", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Disc Rotor Replacement", "price": "25", "priceCurrency": "GBP"}
+    ]
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=Inter:wght@400;500&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:   #1C2526;
+      --grey:    #243030;
+      --mid:     #3A4F50;
+      --volt:    #29A8D8;
+      --white:   #F2F0EB;
+      --dim:     #8DA8AA;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 2.5rem;
+      background: rgba(28,37,38,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--mid);
+    }
+    .logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 900;
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .logo span { color: #29A8D8; }
+    nav ul { display: flex; gap: 2rem; list-style: none; }
+    nav a {
+      color: var(--dim);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--white); }
+    .nav-cta {
+      background: #F0A500;
+      color: #1C2526 !important;
+      padding: 0.5rem 1.25rem;
+      border-radius: 2rem;
+      font-weight: 700 !important;
+      transition: opacity 0.2s !important;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* HERO */
+    .hero {
+      min-height: 70vh;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 0 2.5rem 5rem;
+      position: relative;
+      overflow: hidden;
+      padding-top: 120px;
+    }
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #F0A500;
+      margin-bottom: 1.25rem;
+      font-weight: 500;
+    }
+    .hero-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.5rem, 7vw, 6rem);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 800px;
+      margin-bottom: 1.5rem;
+    }
+    .hero-title em { font-style: normal; color: #F0A500; }
+    .hero-sub {
+      max-width: 520px;
+      color: var(--dim);
+      font-size: 1.05rem;
+      margin-bottom: 2.5rem;
+    }
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .btn-primary {
+      background: #F0A500;
+      color: #1C2526;
+      font-weight: 700;
+      padding: 0.85rem 2rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: opacity 0.2s;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+    }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      font-weight: 600;
+      padding: 0.85rem 2rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-size: 1rem;
+      border: 1px solid var(--mid);
+      transition: border-color 0.2s;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+    }
+    .btn-secondary:hover { border-color: var(--white); }
+
+    /* PRICE STRIP */
+    .price-strip {
+      background: var(--grey);
+      border-top: 1px solid var(--mid);
+      border-bottom: 1px solid var(--mid);
+      padding: 1.5rem 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .price-item { text-align: center; }
+    .price-item .price-label {
+      font-size: 0.8rem;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.25rem;
+    }
+    .price-item .price-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: #F0A500;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 5rem 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-label {
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #29A8D8;
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 3rem;
+    }
+
+    /* SERVICE CARDS */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      border-radius: 1rem;
+      padding: 2rem;
+      transition: border-color 0.2s;
+    }
+    .service-card:hover { border-color: #F0A500; }
+    .service-icon { font-size: 2rem; display: block; margin-bottom: 1rem; }
+    .service-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    .service-desc { color: var(--dim); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.6; }
+    .service-price {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      color: #F0A500;
+      font-size: 1rem;
+    }
+
+    /* PARTS NOTE */
+    .parts-note {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      border-left: 3px solid #F0A500;
+      border-radius: 0.75rem;
+      padding: 1.5rem 2rem;
+      margin-bottom: 3rem;
+      color: var(--dim);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .parts-note strong { color: var(--white); }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      border-radius: 0.75rem;
+      padding: 1.5rem 2rem;
+    }
+    .faq-q {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+      color: var(--white);
+    }
+    .faq-a { color: var(--dim); font-size: 0.9rem; line-height: 1.7; }
+
+    /* BRANDS */
+    .brands-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+    .brand-tag {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      padding: 0.4rem 1rem;
+      border-radius: 2rem;
+      font-size: 0.85rem;
+      color: var(--dim);
+    }
+
+    /* CTA SECTION */
+    .cta-section {
+      background: var(--grey);
+      border-top: 1px solid var(--mid);
+      border-bottom: 1px solid var(--mid);
+      padding: 4rem 2.5rem;
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+    }
+    .cta-section p { color: var(--dim); margin-bottom: 2rem; font-size: 1.05rem; }
+    .cta-btns { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+
+    /* CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .contact-item {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+    }
+    .contact-item-label { font-size: 0.75rem; color: var(--dim); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
+    .contact-item-val { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; }
+
+    /* FOOTER */
+    footer {
+      background: var(--grey);
+      border-top: 1px solid var(--mid);
+      padding: 2rem 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .footer-copy { font-size: 0.8rem; color: var(--dim); }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-size: 0.8rem; color: var(--dim); text-decoration: none; }
+    .footer-links a:hover { color: var(--white); }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      .hero { padding: 120px 1.5rem 3rem; }
+      section { padding: 3rem 1.5rem; }
+      .price-strip { padding: 1.5rem; gap: 1.5rem; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">The <span>E-Scooter</span> Doc</a>
+  <ul>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#how">Process</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="motors.html">Motors</a></li>
+    <li><a href="ebike.html">E-Bikes</a></li>
+    <li><a href="display.html">Display</a></li>
+    <li><a href="frame.html">Frame</a></li>
+    <li><a href="index.html#contact" class="nav-cta">💬 Book via WhatsApp</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="hero-eyebrow">E-Scooter & E-Bike Brake Repair — Peterborough</p>
+  <h1 class="hero-title">Brakes not<br>working? <em>We fix that.</em></h1>
+  <p class="hero-sub">Brake pad replacement, hydraulic bleeding, caliper and rotor replacement, and mechanical to hydraulic conversions. Fast turnaround, honest pricing.</p>
+  <div class="hero-btns">
+    <a href="https://wa.me/447597772452?text=Hi%2C%20I%20need%20a%20brake%20repair%20for%20my%20e-scooter" target="_blank" class="btn-primary">💬 WhatsApp us</a>
+    <a href="tel:07597772452" class="btn-secondary">📞 Call David</a>
+  </div>
+</div>
+
+<!-- PRICE STRIP -->
+<div class="price-strip">
+  <div class="price-item">
+    <div class="price-label">Brake Pad Replacement</div>
+    <div class="price-val">From £25</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Brake Adjustment</div>
+    <div class="price-val">From £10</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Hydraulic Bleed</div>
+    <div class="price-val">From £30</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Caliper Replacement</div>
+    <div class="price-val">From £20</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Rotor Replacement</div>
+    <div class="price-val">From £20</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section>
+  <p class="section-label">What we do</p>
+  <h2 class="section-title">Full brake service for e-scooters & e-bikes</h2>
+
+  <div class="parts-note">
+    <strong>Parts availability:</strong> Common brake pads, rotors and calipers are stocked in-house for same-day repairs. Less common parts can often be sourced from UK suppliers — for specialist or older model parts we may need to source from abroad. Call ahead and we'll check availability before your visit.
+  </div>
+
+  <div class="parts-note" style="border-left-color: #29A8D8;">
+    <strong>Multiple repairs?</strong> If your scooter needs more than one brake job done at the same time, we offer a bundle deal based on the work required and parts needed. Get in touch for a combined quote — it's almost always cheaper than paying for each job separately.
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">🔲</span>
+      <div class="service-name">Brake Pad Replacement</div>
+      <p class="service-desc">Worn pads reduce stopping power and can damage your rotor. We replace brake pads for both mechanical and hydraulic systems. Common pads stocked in-house for most popular models.</p>
+      <div class="service-price">From £25</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔧</span>
+      <div class="service-name">Brake Adjustment</div>
+      <p class="service-desc">Brakes feel spongy, rubbing, or pulling to one side? We adjust cable tension, pad alignment and lever reach to get your brakes sharp and responsive again.</p>
+      <div class="service-price">From £10</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">💧</span>
+      <div class="service-name">Hydraulic Brake Bleed</div>
+      <p class="service-desc">Air in hydraulic brake lines causes a spongy, unreliable lever feel. We bleed the system and refill with the correct brake fluid to restore firm, consistent braking.</p>
+      <div class="service-price">From £30</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">⬆️</span>
+      <div class="service-name">Mechanical to Hydraulic Conversion</div>
+      <p class="service-desc">Upgrade from mechanical (cable-actuated) disc brakes to hydraulic for significantly improved braking power, feel and consistency. Includes new hydraulic caliper, lever and brake line.</p>
+      <div class="service-price">POA</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">⬇️</span>
+      <div class="service-name">Hydraulic to Mechanical Conversion</div>
+      <p class="service-desc">Prefer simpler maintenance or need to replace a damaged hydraulic system with a mechanical setup? We handle full conversions back to cable-actuated mechanical disc brakes.</p>
+      <div class="service-price">POA</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔩</span>
+      <div class="service-name">Caliper Replacement</div>
+      <p class="service-desc">Seized, cracked or damaged caliper? We replace it with the correct unit for your model. Common calipers stocked — less common sourced to order.</p>
+      <div class="service-price">From £20</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">💿</span>
+      <div class="service-name">Disc Rotor Replacement</div>
+      <p class="service-desc">Warped, scored or cracked rotors cause vibration and poor stopping. We replace the disc rotor and check caliper alignment to make sure everything runs true.</p>
+      <div class="service-price">From £20</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔍</span>
+      <div class="service-name">Brake Inspection</div>
+      <p class="service-desc">Not sure what's wrong? We'll inspect pads, rotor, caliper, lever and cable or hydraulic line and advise on the best fix. Free with any brake repair.</p>
+      <div class="service-price">Free with repair</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding-top: 0;">
+  <p class="section-label">Common questions</p>
+  <h2 class="section-title">Brake repair FAQ</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">How do I know if my brakes need attention?</div>
+      <div class="faq-a">Key signs: squealing or grinding noise when braking, lever pulling closer to the handlebar than usual, vibration when braking, longer stopping distances, or the lever feeling soft and spongy. Any of these means it's time to get them checked.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What's the difference between mechanical and hydraulic brakes?</div>
+      <div class="faq-a">Mechanical disc brakes use a steel cable to pull the caliper and clamp the rotor — they're simple, easy to maintain and repair. Hydraulic disc brakes use fluid pressure instead of a cable, giving more stopping power with less lever effort and a more consistent feel. Hydraulic brakes perform better but require periodic bleeding to maintain performance.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How often do hydraulic brakes need bleeding?</div>
+      <div class="faq-a">Generally every 12 to 24 months under normal use, or sooner if the lever starts feeling spongy. Heavy use, overheating or air getting into the system will speed this up.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you stock brake parts or do I need to order them?</div>
+      <div class="faq-a">Common brake pads, rotors and calipers for popular models are stocked in-house for same-day repairs. Less common parts can often be sourced from UK suppliers. For specialist or older model parts we may need to source from abroad. Call ahead and we'll check what we have before your visit.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is it worth upgrading from mechanical to hydraulic brakes?</div>
+      <div class="faq-a">If you ride frequently, in wet conditions, or carry extra load, hydraulic brakes make a noticeable difference in stopping power and feel. For casual riders on dry roads, well-maintained mechanical brakes are perfectly adequate. We'll give you an honest recommendation based on how you use your scooter or e-bike.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you need an appointment for brake work?</div>
+      <div class="faq-a">Yes — appointment only. Call or WhatsApp to book. Simple jobs like pad replacement and adjustment are often available same day.</div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section style="padding-top: 0;">
+  <p class="section-label">Compatible models</p>
+  <h2 class="section-title">We work on all major brands</h2>
+  <p style="color: var(--dim); margin-bottom: 1rem;">Common brake parts stocked for popular models. Less common parts sourced to order — call ahead to check availability.</p>
+  <div class="brands-wrap">
+    <span class="brand-tag">Xiaomi</span>
+    <span class="brand-tag">Ninebot</span>
+    <span class="brand-tag">Segway</span>
+    <span class="brand-tag">Pure Electric</span>
+    <span class="brand-tag">Dualtron</span>
+    <span class="brand-tag">KuKirin</span>
+    <span class="brand-tag">Kaabo</span>
+    <span class="brand-tag">Inokim</span>
+    <span class="brand-tag">Vsett</span>
+    <span class="brand-tag">Zero</span>
+    <span class="brand-tag">Apollo</span>
+    <span class="brand-tag">Bosch e-bikes</span>
+    <span class="brand-tag">Bafang e-bikes</span>
+    <span class="brand-tag">Most other brands</span>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <h2>Brakes not right? Let's sort it.</h2>
+  <p>Call or WhatsApp to book. Simple jobs often available same day.</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/447597772452?text=Hi%2C%20I%20need%20a%20brake%20repair%20for%20my%20e-scooter" target="_blank" class="btn-primary" style="background:#25D366; color:#fff;">💬 WhatsApp us</a>
+    <a href="tel:07597772452" class="btn-primary">📞 Call David</a>
+    <a href="https://tally.so/r/Xx9rZ4" target="_blank" class="btn-secondary">🔧 Get a free quote</a>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section>
+  <p class="section-label">Find us</p>
+  <h2 class="section-title">Based in Peterborough</h2>
+  <div class="contact-grid">
+    <div class="contact-item">
+      <div class="contact-item-label">Phone / WhatsApp</div>
+      <div class="contact-item-val">07597 772452</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Email</div>
+      <div class="contact-item-val">info@escooterdoc.co.uk</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Location</div>
+      <div class="contact-item-val">Westbury Dr, Peterborough PE7 8NQ</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Hours</div>
+      <div class="contact-item-val">Open 7 days a week</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-copy">© 2026 The EScooter Doc. All rights reserved.</span>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html">← Back to main site</a>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/447597772452?text=Hi%2C%20I%20need%20a%20brake%20repair%20for%20my%20e-scooter" target="_blank"
+   style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;
+          background:#25D366;color:#fff;
+          width:58px;height:58px;border-radius:50%;
+          display:flex;align-items:center;justify-content:center;
+          font-size:1.6rem;box-shadow:0 4px 16px rgba(0,0,0,0.35);
+          text-decoration:none;transition:transform 0.2s;"
+   onmouseover="this.style.transform='scale(1.1)'"
+   onmouseout="this.style.transform='scale(1)'"
+   aria-label="Chat on WhatsApp">&#128172;</a>
+
+</body>
+</html>

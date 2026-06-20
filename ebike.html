@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S06Y9RRCVT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S06Y9RRCVT');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Bike Electrical Repair Peterborough | The EScooter Doc</title>
+  <meta name="description" content="E-bike electrical repair in Peterborough. Built-in battery and charging port repair, motor and hall sensor repair, throttle, display and controller repairs. From £30.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "E-Bike Electrical Repair",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "The EScooter Doc",
+      "url": "https://escooterdoc.co.uk",
+      "telephone": "+447597772452",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Westbury Drive",
+        "addressLocality": "Peterborough",
+        "postalCode": "PE7 8NQ",
+        "addressCountry": "GB"
+      }
+    },
+    "areaServed": "Peterborough",
+    "description": "E-bike electrical repair in Peterborough. Diagnostic, motor wiring and hall sensor repair, built-in charging port repair, built-in battery repair, throttle and display repair, controller repair.",
+    "offers": [
+      {"@type": "Offer", "name": "E-Bike Electrical Diagnostic", "price": "30", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Motor Wire or Hall Sensor Repair", "price": "60", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Built-In Charging Port Repair", "price": "30", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Built-In Battery Repair", "price": "40", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Throttle, E-Brake & Display Repair", "price": "30", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Controller Repair or Replacement", "price": "40", "priceCurrency": "GBP"}
+    ]
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=Inter:wght@400;500&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #1C2526; --grey: #243030; --mid: #3A4F50;
+      --volt: #29A8D8; --white: #F2F0EB; --dim: #8DA8AA;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--black); color: var(--white); font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; overflow-x: hidden; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 2.5rem; background: rgba(28,37,38,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--mid); }
+    .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 900; font-size: 1.35rem; letter-spacing: -0.03em; color: var(--white); text-decoration: none; }
+    .logo span { color: #29A8D8; }
+    nav ul { display: flex; gap: 2rem; list-style: none; }
+    nav a { color: var(--dim); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; }
+    nav a:hover { color: var(--white); }
+    .nav-cta { background: #F0A500; color: #1C2526 !important; padding: 0.5rem 1.25rem; border-radius: 2rem; font-weight: 700 !important; }
+
+    .hero { min-height: 70vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 120px 2.5rem 5rem; position: relative; overflow: hidden; }
+    .hero-eyebrow { font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; color: #F0A500; margin-bottom: 1.25rem; font-weight: 500; }
+    .hero-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2.5rem, 7vw, 6rem); font-weight: 900; line-height: 0.95; letter-spacing: -0.04em; max-width: 800px; margin-bottom: 1.5rem; }
+    .hero-title em { font-style: normal; color: #F0A500; }
+    .hero-sub { max-width: 540px; color: var(--dim); font-size: 1.05rem; margin-bottom: 2.5rem; }
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .btn-primary { background: #F0A500; color: #1C2526; font-weight: 700; padding: 0.85rem 2rem; border-radius: 2rem; text-decoration: none; font-size: 1rem; transition: opacity 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-secondary { background: transparent; color: var(--white); font-weight: 600; padding: 0.85rem 2rem; border-radius: 2rem; text-decoration: none; font-size: 1rem; border: 1px solid var(--mid); transition: border-color 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; }
+    .btn-secondary:hover { border-color: var(--white); }
+
+    .price-strip { background: var(--grey); border-top: 1px solid var(--mid); border-bottom: 1px solid var(--mid); padding: 1.5rem 2.5rem; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
+    .price-item { text-align: center; }
+    .price-item .price-label { font-size: 0.8rem; color: var(--dim); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .price-item .price-val { font-family: 'Space Grotesk', sans-serif; font-weight: 900; font-size: 1.5rem; color: #F0A500; }
+
+    section { padding: 5rem 2.5rem; max-width: 1200px; margin: 0 auto; }
+    .section-label { font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: #29A8D8; margin-bottom: 0.75rem; font-weight: 500; }
+    .section-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 3rem; }
+
+    .scope-block { background: var(--grey); border: 1px solid var(--mid); border-radius: 1rem; padding: 2rem; margin-bottom: 3rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .scope-col h3 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.05rem; margin-bottom: 1rem; }
+    .scope-col.yes h3 { color: #4ADE80; }
+    .scope-col.no h3 { color: #F87171; }
+    .scope-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+    .scope-list li { color: var(--dim); font-size: 0.9rem; padding-left: 1.5rem; position: relative; }
+    .scope-col.yes .scope-list li::before { content: '✓'; position: absolute; left: 0; color: #4ADE80; font-weight: 700; }
+    .scope-col.no .scope-list li::before { content: '✕'; position: absolute; left: 0; color: #F87171; font-weight: 700; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+    .service-card { background: var(--grey); border: 1px solid var(--mid); border-radius: 1rem; padding: 2rem; transition: border-color 0.2s; }
+    .service-card:hover { border-color: #F0A500; }
+    .service-icon { font-size: 2rem; display: block; margin-bottom: 1rem; }
+    .service-name { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.1rem; margin-bottom: 0.75rem; }
+    .service-desc { color: var(--dim); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.6; }
+    .service-price { font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #F0A500; font-size: 1rem; }
+
+    .parts-note { background: var(--grey); border: 1px solid var(--mid); border-left: 3px solid #F0A500; border-radius: 0.75rem; padding: 1.5rem 2rem; margin-bottom: 3rem; color: var(--dim); font-size: 0.95rem; line-height: 1.7; }
+    .parts-note strong { color: var(--white); }
+
+    .faq-list { display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item { background: var(--grey); border: 1px solid var(--mid); border-radius: 0.75rem; padding: 1.5rem 2rem; }
+    .faq-q { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; margin-bottom: 0.75rem; color: var(--white); }
+    .faq-a { color: var(--dim); font-size: 0.9rem; line-height: 1.7; }
+
+    .brands-wrap { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
+    .brand-tag { background: var(--grey); border: 1px solid var(--mid); padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.85rem; color: var(--dim); }
+
+    .cta-section { background: var(--grey); border-top: 1px solid var(--mid); border-bottom: 1px solid var(--mid); padding: 4rem 2.5rem; text-align: center; }
+    .cta-section h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; letter-spacing: -0.03em; margin-bottom: 1rem; }
+    .cta-section p { color: var(--dim); margin-bottom: 2rem; font-size: 1.05rem; }
+    .cta-btns { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
+    .contact-item { background: var(--grey); border: 1px solid var(--mid); border-radius: 0.75rem; padding: 1.5rem; }
+    .contact-item-label { font-size: 0.75rem; color: var(--dim); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
+    .contact-item-val { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; }
+
+    footer { background: var(--grey); border-top: 1px solid var(--mid); padding: 2rem 2.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
+    .footer-copy { font-size: 0.8rem; color: var(--dim); }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-size: 0.8rem; color: var(--dim); text-decoration: none; }
+    .footer-links a:hover { color: var(--white); }
+
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      .hero { padding: 120px 1.5rem 3rem; }
+      section { padding: 3rem 1.5rem; }
+      .price-strip { padding: 1.5rem; gap: 1.5rem; }
+      .scope-block { grid-template-columns: 1fr; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">The <span>E-Scooter</span> Doc</a>
+  <ul>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="motors.html">Motors</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="display.html">Display</a></li>
+    <li><a href="frame.html">Frame</a></li>
+    <li><a href="index.html#contact" class="nav-cta">💬 Book via WhatsApp</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <p class="hero-eyebrow">E-Bike Electrical Repair — Peterborough</p>
+  <h1 class="hero-title">E-bike electrics,<br><em>sorted properly.</em></h1>
+  <p class="hero-sub">Built-in battery and charging port repair, motor and hall sensor faults, throttle, e-brake, display and controller repairs. Electrics and tyres only — we don't touch gears or general bike mechanics, so you get a specialist, not a generalist.</p>
+  <div class="hero-btns">
+    <a href="https://wa.me/447597772452?text=Hi%2C%20I%20have%20an%20electrical%20issue%20with%20my%20e-bike" target="_blank" class="btn-primary">💬 WhatsApp us</a>
+    <a href="tel:07597772452" class="btn-secondary">📞 Call David</a>
+  </div>
+</div>
+
+<div class="price-strip">
+  <div class="price-item">
+    <div class="price-label">Diagnostic</div>
+    <div class="price-val">£30</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Motor Wire / Hall Sensor</div>
+    <div class="price-val">From £60</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Built-In Charging Port</div>
+    <div class="price-val">From £30</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Built-In Battery Repair</div>
+    <div class="price-val">From £40</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Throttle / E-Brake / Display</div>
+    <div class="price-val">From £30</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Controller</div>
+    <div class="price-val">From £40</div>
+  </div>
+</div>
+
+<section>
+  <p class="section-label">What we cover</p>
+  <h2 class="section-title">Electrics and tyres — that's our lane</h2>
+
+  <div class="scope-block">
+    <div class="scope-col yes">
+      <h3>What we fix</h3>
+      <ul class="scope-list">
+        <li>Built-in battery repairs</li>
+        <li>Built-in charging ports</li>
+        <li>Motor wiring & hall sensors</li>
+        <li>Controllers</li>
+        <li>Throttles & e-brakes</li>
+        <li>Displays & wiring</li>
+        <li>Tyres & inner tubes</li>
+      </ul>
+    </div>
+    <div class="scope-col no">
+      <h3>What we don't do</h3>
+      <ul class="scope-list">
+        <li>Gears & derailleurs</li>
+        <li>Frame & general bike mechanics</li>
+        <li>Bosch battery repairs</li>
+        <li>Carrera battery repairs</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="parts-note">
+    <strong>Parts availability:</strong> Common parts — chargers ports, throttles, displays, controllers — are stocked or sourced quickly from UK suppliers. Motors and specialist parts vary by model, some readily available, others sourced to order. We'll always check and confirm before any work begins.
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">🔍</span>
+      <div class="service-name">Electrical Diagnostic</div>
+      <p class="service-desc">Not sure what's wrong with your e-bike? We run a full electrical diagnostic across the battery, motor, controller, throttle and wiring to pinpoint the exact fault. Fee is included in the repair cost if you go ahead.</p>
+      <div class="service-price">£30 — included in repair if you proceed</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔌</span>
+      <div class="service-name">Motor Wire or Hall Sensor Repair</div>
+      <p class="service-desc">Damaged motor wiring or failed hall sensors cause jerky power, cutting out or no power delivery at all. We repair or replace the affected part without needing a full motor swap.</p>
+      <div class="service-price">From £60</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">⚡</span>
+      <div class="service-name">Built-In Charging Port Repair</div>
+      <p class="service-desc">A loose, damaged or corroded charging port stops your battery charging properly, even if the battery itself is fine. We repair or replace the port and check the full charging circuit.</p>
+      <div class="service-price">From £30</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔋</span>
+      <div class="service-name">Built-In Battery Repair</div>
+      <p class="service-desc">Cell, BMS and balancing repairs for built-in (non-removable) e-bike batteries. We can't currently work on Bosch or Carrera battery systems — for all other brands, get in touch and we'll diagnose the fault.</p>
+      <div class="service-price">From £40</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🎚️</span>
+      <div class="service-name">Throttle, E-Brake & Display Repair</div>
+      <p class="service-desc">Faulty throttle response, e-brake sensors not cutting power correctly, or a display that won't turn on or shows errors — we diagnose and repair or replace the affected component.</p>
+      <div class="service-price">From £30</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🖥️</span>
+      <div class="service-name">Controller Repair or Replacement</div>
+      <p class="service-desc">The controller manages power from the battery to the motor. A faulty controller causes power loss, erratic acceleration or a completely dead system. We diagnose and repair or replace as needed.</p>
+      <div class="service-price">From £40</div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <p class="section-label">Common questions</p>
+  <h2 class="section-title">E-bike electrical FAQ</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">Do you work on Bosch or Carrera e-bike batteries?</div>
+      <div class="faq-a">No — we currently don't work on Bosch or Carrera battery systems. We work on all other e-bike electrical systems including the motor, controller, throttle, display and wiring for any brand, including Bosch and Carrera bikes — it's specifically their battery systems we can't service.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you work on gears or general bike mechanics?</div>
+      <div class="faq-a">No — we're electrical specialists, not a general bike shop. We don't touch gears, derailleurs or frame mechanics. We focus on the electrical drivetrain (battery, motor, controller, throttle, display, wiring) plus brakes and tyres.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">My e-bike has lost power suddenly — what could it be?</div>
+      <div class="faq-a">Could be the battery, the controller, a wiring fault, or even the throttle or e-brake sensor cutting power incorrectly. We run a diagnostic to find the actual cause rather than guessing — it's £30, included in the repair cost if you go ahead.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">My display won't turn on — is that expensive to fix?</div>
+      <div class="faq-a">Depends on the cause. Sometimes it's a loose connector or wiring fault, which is a quick and inexpensive fix. If the display unit itself has failed it needs replacing — we'll diagnose first and give you the price before doing anything.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is a hub motor or mid-drive motor easier to repair?</div>
+      <div class="faq-a">Both are repairable for wiring and hall sensor faults. Mid-drive systems (Bosch, Bafang, Shimano Steps) are more integrated with the bike's electronics, so diagnostics can take a little longer, but most electrical faults are still fixable without replacing the whole unit.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you need an appointment?</div>
+      <div class="faq-a">Yes — appointment only. Call or WhatsApp to book a slot. Bring your e-bike's brand and model details if you can, it helps us prepare.</div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <p class="section-label">Compatible systems</p>
+  <h2 class="section-title">E-bike motor & battery systems we work on</h2>
+  <p style="color: var(--dim); margin-bottom: 1rem;">All brands and motor systems except Bosch and Carrera batteries — see FAQ above.</p>
+  <div class="brands-wrap">
+    <span class="brand-tag">Bafang</span>
+    <span class="brand-tag">Shimano Steps</span>
+    <span class="brand-tag">Yamaha PW</span>
+    <span class="brand-tag">Bosch (motor & electrics — not battery)</span>
+    <span class="brand-tag">Carrera (motor & electrics — not battery)</span>
+    <span class="brand-tag">TranzX</span>
+    <span class="brand-tag">Most hub motor systems</span>
+    <span class="brand-tag">Most mid-drive systems</span>
+  </div>
+</section>
+
+<div class="cta-section">
+  <h2>E-bike playing up? Let's diagnose it properly.</h2>
+  <p>Call or WhatsApp to book. Diagnostic fee included in repair cost if you proceed.</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/447597772452?text=Hi%2C%20I%20have%20an%20electrical%20issue%20with%20my%20e-bike" target="_blank" class="btn-primary" style="background:#25D366; color:#fff;">💬 WhatsApp us</a>
+    <a href="tel:07597772452" class="btn-primary">📞 Call David</a>
+    <a href="https://tally.so/r/Xx9rZ4" target="_blank" class="btn-secondary">🔧 Get a free quote</a>
+  </div>
+</div>
+
+<section>
+  <p class="section-label">Find us</p>
+  <h2 class="section-title">Based in Peterborough</h2>
+  <div class="contact-grid">
+    <div class="contact-item">
+      <div class="contact-item-label">Phone / WhatsApp</div>
+      <div class="contact-item-val">07597 772452</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Email</div>
+      <div class="contact-item-val">info@escooterdoc.co.uk</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Location</div>
+      <div class="contact-item-val">Westbury Dr, Peterborough PE7 8NQ</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Hours</div>
+      <div class="contact-item-val">Open 7 days a week</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-copy">© 2026 The EScooter Doc. All rights reserved.</span>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html">← Back to main site</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/447597772452?text=Hi%2C%20I%20have%20an%20electrical%20issue%20with%20my%20e-bike" target="_blank"
+   style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 4px 16px rgba(0,0,0,0.35);text-decoration:none;transition:transform 0.2s;"
+   onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
+   aria-label="Chat on WhatsApp">&#128172;</a>
+
+</body>
+</html>

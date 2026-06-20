@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S06Y9RRCVT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S06Y9RRCVT');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Scooter Motor & Controller Repair Peterborough | The EScooter Doc</title>
+  <meta name="description" content="E-scooter and e-bike motor and controller repair in Peterborough. Motor wiring, hall sensor replacement, motor replacement and controller repair. From £30.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "E-Scooter Motor & Controller Repair",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "The EScooter Doc",
+      "url": "https://escooterdoc.co.uk",
+      "telephone": "+447597772452",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Westbury Drive",
+        "addressLocality": "Peterborough",
+        "postalCode": "PE7 8NQ",
+        "addressCountry": "GB"
+      }
+    },
+    "areaServed": "Peterborough",
+    "description": "E-scooter and e-bike motor and controller repair in Peterborough. Motor wiring repair, hall sensor replacement, motor replacement and controller repair or replacement.",
+    "offers": [
+      {"@type": "Offer", "name": "Motor Wire Damage / Rewire", "price": "45", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Motor Hall Sensor Replacement", "price": "60", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Motor Replacement (labour)", "price": "30", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Controller Repair or Replacement", "price": "40", "priceCurrency": "GBP"}
+    ]
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=Inter:wght@400;500&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #1C2526; --grey: #243030; --mid: #3A4F50;
+      --volt: #29A8D8; --white: #F2F0EB; --dim: #8DA8AA;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--black); color: var(--white); font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; overflow-x: hidden; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 2.5rem; background: rgba(28,37,38,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--mid); }
+    .logo { font-family: 'Space Grotesk', sans-serif; font-weight: 900; font-size: 1.35rem; letter-spacing: -0.03em; color: var(--white); text-decoration: none; }
+    .logo span { color: #29A8D8; }
+    nav ul { display: flex; gap: 2rem; list-style: none; }
+    nav a { color: var(--dim); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.2s; }
+    nav a:hover { color: var(--white); }
+    .nav-cta { background: #F0A500; color: #1C2526 !important; padding: 0.5rem 1.25rem; border-radius: 2rem; font-weight: 700 !important; }
+
+    .hero { min-height: 70vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 120px 2.5rem 5rem; position: relative; overflow: hidden; }
+    .hero-eyebrow { font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; color: #F0A500; margin-bottom: 1.25rem; font-weight: 500; }
+    .hero-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2.5rem, 7vw, 6rem); font-weight: 900; line-height: 0.95; letter-spacing: -0.04em; max-width: 800px; margin-bottom: 1.5rem; }
+    .hero-title em { font-style: normal; color: #F0A500; }
+    .hero-sub { max-width: 520px; color: var(--dim); font-size: 1.05rem; margin-bottom: 2.5rem; }
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .btn-primary { background: #F0A500; color: #1C2526; font-weight: 700; padding: 0.85rem 2rem; border-radius: 2rem; text-decoration: none; font-size: 1rem; transition: opacity 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-secondary { background: transparent; color: var(--white); font-weight: 600; padding: 0.85rem 2rem; border-radius: 2rem; text-decoration: none; font-size: 1rem; border: 1px solid var(--mid); transition: border-color 0.2s; display: inline-flex; align-items: center; gap: 0.5rem; }
+    .btn-secondary:hover { border-color: var(--white); }
+
+    .price-strip { background: var(--grey); border-top: 1px solid var(--mid); border-bottom: 1px solid var(--mid); padding: 1.5rem 2.5rem; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
+    .price-item { text-align: center; }
+    .price-item .price-label { font-size: 0.8rem; color: var(--dim); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+    .price-item .price-val { font-family: 'Space Grotesk', sans-serif; font-weight: 900; font-size: 1.5rem; color: #F0A500; }
+
+    .motor-note { background: #1C2526; border: 1px solid var(--mid); border-left: 3px solid #F0A500; border-radius: 0.75rem; padding: 1.25rem 1.75rem; margin: 0 2.5rem 0; max-width: 1200px; margin: 0 auto 0; color: var(--dim); font-size: 0.9rem; line-height: 1.7; }
+    .motor-note strong { color: var(--white); }
+
+    section { padding: 5rem 2.5rem; max-width: 1200px; margin: 0 auto; }
+    .section-label { font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: #29A8D8; margin-bottom: 0.75rem; font-weight: 500; }
+    .section-title { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 3rem; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+    .service-card { background: var(--grey); border: 1px solid var(--mid); border-radius: 1rem; padding: 2rem; transition: border-color 0.2s; }
+    .service-card:hover { border-color: #F0A500; }
+    .service-icon { font-size: 2rem; display: block; margin-bottom: 1rem; }
+    .service-name { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.1rem; margin-bottom: 0.75rem; }
+    .service-desc { color: var(--dim); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.6; }
+    .service-price { font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #F0A500; font-size: 1rem; }
+
+    .parts-note { background: var(--grey); border: 1px solid var(--mid); border-left: 3px solid #F0A500; border-radius: 0.75rem; padding: 1.5rem 2rem; margin-bottom: 3rem; color: var(--dim); font-size: 0.95rem; line-height: 1.7; }
+    .parts-note strong { color: var(--white); }
+
+    .faq-list { display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item { background: var(--grey); border: 1px solid var(--mid); border-radius: 0.75rem; padding: 1.5rem 2rem; }
+    .faq-q { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; margin-bottom: 0.75rem; color: var(--white); }
+    .faq-a { color: var(--dim); font-size: 0.9rem; line-height: 1.7; }
+
+    .brands-wrap { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
+    .brand-tag { background: var(--grey); border: 1px solid var(--mid); padding: 0.4rem 1rem; border-radius: 2rem; font-size: 0.85rem; color: var(--dim); }
+
+    .cta-section { background: var(--grey); border-top: 1px solid var(--mid); border-bottom: 1px solid var(--mid); padding: 4rem 2.5rem; text-align: center; }
+    .cta-section h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; letter-spacing: -0.03em; margin-bottom: 1rem; }
+    .cta-section p { color: var(--dim); margin-bottom: 2rem; font-size: 1.05rem; }
+    .cta-btns { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
+    .contact-item { background: var(--grey); border: 1px solid var(--mid); border-radius: 0.75rem; padding: 1.5rem; }
+    .contact-item-label { font-size: 0.75rem; color: var(--dim); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
+    .contact-item-val { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; }
+
+    footer { background: var(--grey); border-top: 1px solid var(--mid); padding: 2rem 2.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
+    .footer-copy { font-size: 0.8rem; color: var(--dim); }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-size: 0.8rem; color: var(--dim); text-decoration: none; }
+    .footer-links a:hover { color: var(--white); }
+
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      .hero { padding: 120px 1.5rem 3rem; }
+      section { padding: 3rem 1.5rem; }
+      .price-strip { padding: 1.5rem; gap: 1.5rem; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">The <span>E-Scooter</span> Doc</a>
+  <ul>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#how">Process</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="ebike.html">E-Bikes</a></li>
+    <li><a href="display.html">Display</a></li>
+    <li><a href="frame.html">Frame</a></li>
+    <li><a href="index.html#contact" class="nav-cta">💬 Book via WhatsApp</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <p class="hero-eyebrow">E-Scooter & E-Bike Motor & Controller Repair — Peterborough</p>
+  <h1 class="hero-title">Motor or<br>controller fault?<br><em>We sort it.</em></h1>
+  <p class="hero-sub">Motor wiring damage, hall sensor failure, full motor replacement and controller repair or replacement. Honest diagnosis, no unnecessary part swaps.</p>
+  <div class="hero-btns">
+    <a href="https://wa.me/447597772452?text=Hi%2C%20I%20have%20a%20motor%20or%20controller%20issue%20with%20my%20e-scooter" target="_blank" class="btn-primary">💬 WhatsApp us</a>
+    <a href="tel:07597772452" class="btn-secondary">📞 Call David</a>
+  </div>
+</div>
+
+<div class="price-strip">
+  <div class="price-item">
+    <div class="price-label">Motor Wire Damage / Rewire</div>
+    <div class="price-val">From £45</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Hall Sensor Replacement</div>
+    <div class="price-val">From £60</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Motor Replacement (labour)</div>
+    <div class="price-val">£30</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Controller Repair / Replacement</div>
+    <div class="price-val">From £40</div>
+  </div>
+</div>
+
+<div style="background:#1C2526; border-top: 1px solid #3A4F50; border-bottom: 1px solid #3A4F50; padding: 1.25rem 2.5rem; text-align: center;">
+  <p style="color:#8DA8AA; font-size:0.9rem; max-width:700px; margin:0 auto;">
+    <strong style="color:#F0A500;">⚠ Please note:</strong> Motor replacement price is for labour only. New motor cost varies depending on size, power output and brand. We will always confirm the full price — parts and labour — before starting any work.
+  </p>
+</div>
+
+<section>
+  <p class="section-label">What we do</p>
+  <h2 class="section-title">Motor & controller repairs — properly diagnosed first</h2>
+
+  <div class="parts-note">
+    <strong>Parts availability:</strong> Common controllers for popular models are stocked or available from UK suppliers. Motors and specialist controllers may need to be sourced — some are available from UK stock, others may need to come from abroad. We will always let you know before any work begins.
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">🔌</span>
+      <div class="service-name">Motor Wire Damage & Rewire</div>
+      <p class="service-desc">Motor phase wires are one of the most common points of failure — especially on scooters ridden in wet conditions or that have taken a knock. We repair or replace damaged motor wiring without needing to replace the whole motor.</p>
+      <div class="service-price">From £45</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🧲</span>
+      <div class="service-name">Motor Hall Sensor Replacement</div>
+      <p class="service-desc">Hall sensors tell the controller the motor's position so it can deliver power at the right time. Failed hall sensors cause jerky power delivery, cutting out, or the motor not engaging at all. We replace the faulty sensor — no need to replace the whole motor.</p>
+      <div class="service-price">From £60</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">⚙️</span>
+      <div class="service-name">Motor Replacement</div>
+      <p class="service-desc">When the motor itself has failed beyond repair, we source and fit a replacement. Labour is a flat £30 — motor cost is additional and varies by size, power output and brand. We will confirm the full price before any work starts.</p>
+      <div class="service-price">£30 labour — motor cost extra</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🖥️</span>
+      <div class="service-name">Controller Repair or Replacement</div>
+      <p class="service-desc">The controller is the brain of the electric drivetrain — it manages power delivery from the battery to the motor. A faulty controller can cause loss of power, erratic acceleration, error codes or a completely dead scooter. We diagnose and repair or replace as needed.</p>
+      <div class="service-price">From £40</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔍</span>
+      <div class="service-name">Motor & Controller Diagnostic</div>
+      <p class="service-desc">Not sure whether it is the motor, the controller or something else? We run a full electrical diagnostic to find the exact fault before recommending any repair. Saves you money — no guessing, no unnecessary part replacements.</p>
+      <div class="service-price">Free with any repair</div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <p class="section-label">Common questions</p>
+  <h2 class="section-title">Motor & controller FAQ</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">My scooter has no power — is it the motor or the controller?</div>
+      <div class="faq-a">It could be either — or it could be the battery, wiring or a blown fuse. The symptoms of a motor fault and a controller fault can look very similar. We run a diagnostic to isolate the exact cause before recommending any repair, so you are not paying for parts you do not need.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What are hall sensors and how do I know if mine have failed?</div>
+      <div class="faq-a">Hall sensors are small magnetic sensors inside the motor that tell the controller its position so it can deliver power smoothly. When they fail, you may notice jerky or stuttering power delivery, the motor cutting in and out, unusual noises when accelerating, or the motor not engaging at all. In some cases the scooter will throw an error code. Hall sensor replacement is usually much cheaper than a full motor replacement.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">My motor is making a grinding or clicking noise — what does that mean?</div>
+      <div class="faq-a">A grinding noise usually points to a bearing failure inside the motor hub. A clicking or rattling sound can indicate loose wiring, a damaged phase wire or a hall sensor issue. Either way, it is worth getting it checked before the problem gets worse — riding on a damaged motor can cause further damage to the controller.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can you source a replacement motor or controller for my scooter?</div>
+      <div class="faq-a">In most cases yes. Common controllers for popular models are available from UK suppliers. Motors vary more by size, voltage and power output — some are readily available from UK stock and others need to be sourced from abroad. Call or WhatsApp us with your scooter model and we will check what is available and at what price before you commit to anything.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is it worth repairing or should I just replace the whole scooter?</div>
+      <div class="faq-a">Depends on the scooter and the fault. A wiring repair, hall sensor replacement or controller swap on a mid-range scooter is almost always worth doing. If the motor has physically failed on a very cheap scooter where replacement parts cost more than the scooter is worth, we will tell you honestly rather than take your money.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you work on e-bike motors?</div>
+      <div class="faq-a">Yes — we work on hub motor e-bikes for wiring repairs, hall sensor replacement and motor replacement. For mid-drive systems such as Bosch, Bafang and Shimano Steps we handle electrical faults, wiring and controller issues. Get in touch with your motor make and model and we will confirm what we can do.</div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <p class="section-label">Compatible models</p>
+  <h2 class="section-title">We work on all major brands</h2>
+  <p style="color: var(--dim); margin-bottom: 1rem;">Parts availability varies by model. Call ahead and we will check before your visit.</p>
+  <div class="brands-wrap">
+    <span class="brand-tag">Xiaomi</span>
+    <span class="brand-tag">Ninebot</span>
+    <span class="brand-tag">Segway</span>
+    <span class="brand-tag">Pure Electric</span>
+    <span class="brand-tag">Dualtron</span>
+    <span class="brand-tag">KuKirin</span>
+    <span class="brand-tag">Kaabo</span>
+    <span class="brand-tag">Inokim</span>
+    <span class="brand-tag">Vsett</span>
+    <span class="brand-tag">Zero</span>
+    <span class="brand-tag">Apollo</span>
+    <span class="brand-tag">Bosch e-bikes</span>
+    <span class="brand-tag">Bafang e-bikes</span>
+    <span class="brand-tag">Shimano Steps</span>
+    <span class="brand-tag">Most other brands</span>
+  </div>
+</section>
+
+<div class="cta-section">
+  <h2>Motor or controller issue? Let us take a look.</h2>
+  <p>Free diagnostic with any repair. Call or WhatsApp to book.</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/447597772452?text=Hi%2C%20I%20have%20a%20motor%20or%20controller%20issue%20with%20my%20e-scooter" target="_blank" class="btn-primary" style="background:#25D366; color:#fff;">💬 WhatsApp us</a>
+    <a href="tel:07597772452" class="btn-primary">📞 Call David</a>
+    <a href="https://tally.so/r/Xx9rZ4" target="_blank" class="btn-secondary">🔧 Get a free quote</a>
+  </div>
+</div>
+
+<section>
+  <p class="section-label">Find us</p>
+  <h2 class="section-title">Based in Peterborough</h2>
+  <div class="contact-grid">
+    <div class="contact-item">
+      <div class="contact-item-label">Phone / WhatsApp</div>
+      <div class="contact-item-val">07597 772452</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Email</div>
+      <div class="contact-item-val">info@escooterdoc.co.uk</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Location</div>
+      <div class="contact-item-val">Westbury Dr, Peterborough PE7 8NQ</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Hours</div>
+      <div class="contact-item-val">Open 7 days a week</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-copy">© 2026 The EScooter Doc. All rights reserved.</span>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html">← Back to main site</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/447597772452?text=Hi%2C%20I%20have%20a%20motor%20or%20controller%20issue%20with%20my%20e-scooter" target="_blank"
+   style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 4px 16px rgba(0,0,0,0.35);text-decoration:none;transition:transform 0.2s;"
+   onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
+   aria-label="Chat on WhatsApp">&#128172;</a>
+
+</body>
+</html>
