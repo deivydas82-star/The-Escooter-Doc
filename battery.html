@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S06Y9RRCVT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S06Y9RRCVT');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Scooter Battery Repair & Replacement Peterborough | The EScooter Doc</title>
+  <meta name="description" content="E-scooter battery repair and replacement in Peterborough. Cell replacement, BMS repair, balancing, charging port repair and custom battery builds. From £30.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "E-Scooter Battery Repair & Replacement",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "The EScooter Doc",
+      "url": "https://escooterdoc.co.uk",
+      "telephone": "+447597772452",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Westbury Drive",
+        "addressLocality": "Peterborough",
+        "postalCode": "PE7 8NQ",
+        "addressCountry": "GB"
+      }
+    },
+    "areaServed": "Peterborough",
+    "description": "E-scooter and e-bike battery repair and replacement in Peterborough. Cell replacement, BMS repair and replacement, cell balancing, charging port repair and custom battery builds.",
+    "offers": [
+      {"@type": "Offer", "name": "Battery Diagnostic", "price": "0", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Cell Balancing", "price": "30", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Charging Port Replacement", "price": "30", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "BMS Repair or Replacement", "price": "40", "priceCurrency": "GBP"},
+      {"@type": "Offer", "name": "Cell Replacement & Pack Rebuild", "price": "60", "priceCurrency": "GBP"}
+    ]
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=Inter:wght@400;500&family=Bebas+Neue&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:   #1C2526;
+      --grey:    #243030;
+      --mid:     #3A4F50;
+      --volt:    #29A8D8;
+      --white:   #F2F0EB;
+      --dim:     #8DA8AA;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 2.5rem;
+      background: rgba(28,37,38,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--mid);
+    }
+    .logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 900;
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .logo span { color: #29A8D8; }
+    nav ul { display: flex; gap: 2rem; list-style: none; }
+    nav a {
+      color: var(--dim);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--white); }
+    .nav-cta {
+      background: #F0A500;
+      color: #1C2526 !important;
+      padding: 0.5rem 1.25rem;
+      border-radius: 2rem;
+      font-weight: 700 !important;
+      transition: opacity 0.2s !important;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* HERO */
+    .hero {
+      min-height: 70vh;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 0 2.5rem 5rem;
+      position: relative;
+      overflow: hidden;
+      padding-top: 120px;
+    }
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #F0A500;
+      margin-bottom: 1.25rem;
+      font-weight: 500;
+    }
+    .hero-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.5rem, 7vw, 6rem);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      max-width: 800px;
+      margin-bottom: 1.5rem;
+    }
+    .hero-title em { font-style: normal; color: #F0A500; }
+    .hero-sub {
+      max-width: 520px;
+      color: var(--dim);
+      font-size: 1.05rem;
+      margin-bottom: 2.5rem;
+    }
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .btn-primary {
+      background: #F0A500;
+      color: #1C2526;
+      font-weight: 700;
+      padding: 0.85rem 2rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: opacity 0.2s;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+    }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      font-weight: 600;
+      padding: 0.85rem 2rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-size: 1rem;
+      border: 1px solid var(--mid);
+      transition: border-color 0.2s;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+    }
+    .btn-secondary:hover { border-color: var(--white); }
+
+    /* PRICE STRIP */
+    .price-strip {
+      background: var(--grey);
+      border-top: 1px solid var(--mid);
+      border-bottom: 1px solid var(--mid);
+      padding: 1.5rem 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .price-item { text-align: center; }
+    .price-item .price-label {
+      font-size: 0.8rem;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.25rem;
+    }
+    .price-item .price-val {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: #F0A500;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 5rem 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-label {
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #29A8D8;
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 3rem;
+    }
+
+    /* SERVICE CARDS */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      border-radius: 1rem;
+      padding: 2rem;
+      transition: border-color 0.2s;
+    }
+    .service-card:hover { border-color: #F0A500; }
+    .service-card.featured {
+      border-color: #F0A500;
+      position: relative;
+    }
+    .featured-badge {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      background: #F0A500;
+      color: #1C2526;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.25rem 0.6rem;
+      border-radius: 1rem;
+    }
+    .service-icon { font-size: 2rem; display: block; margin-bottom: 1rem; }
+    .service-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    .service-desc { color: var(--dim); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.6; }
+    .service-price {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      color: #F0A500;
+      font-size: 1rem;
+    }
+
+    /* CUSTOM BATTERY HIGHLIGHT */
+    .custom-battery-block {
+      background: var(--grey);
+      border: 1px solid #F0A500;
+      border-radius: 1rem;
+      padding: 2.5rem;
+      margin-top: 2rem;
+    }
+    .custom-battery-block h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 900;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+    .custom-battery-block h3 span { color: #F0A500; }
+    .custom-battery-block p { color: var(--dim); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; }
+    .custom-bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .custom-bullet-list li {
+      color: var(--dim);
+      font-size: 0.9rem;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+    .custom-bullet-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #F0A500;
+      font-weight: 700;
+    }
+
+    /* PARTS NOTE */
+    .parts-note {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      border-left: 3px solid #F0A500;
+      border-radius: 0.75rem;
+      padding: 1.5rem 2rem;
+      margin-bottom: 3rem;
+      color: var(--dim);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .parts-note strong { color: var(--white); }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      border-radius: 0.75rem;
+      padding: 1.5rem 2rem;
+    }
+    .faq-q {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+      color: var(--white);
+    }
+    .faq-a { color: var(--dim); font-size: 0.9rem; line-height: 1.7; }
+
+    /* BRANDS */
+    .brands-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+    .brand-tag {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      padding: 0.4rem 1rem;
+      border-radius: 2rem;
+      font-size: 0.85rem;
+      color: var(--dim);
+    }
+
+    /* CTA SECTION */
+    .cta-section {
+      background: var(--grey);
+      border-top: 1px solid var(--mid);
+      border-bottom: 1px solid var(--mid);
+      padding: 4rem 2.5rem;
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+    }
+    .cta-section p { color: var(--dim); margin-bottom: 2rem; font-size: 1.05rem; }
+    .cta-btns { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+
+    /* CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .contact-item {
+      background: var(--grey);
+      border: 1px solid var(--mid);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+    }
+    .contact-item-label { font-size: 0.75rem; color: var(--dim); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
+    .contact-item-val { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; }
+
+    /* FOOTER */
+    footer {
+      background: var(--grey);
+      border-top: 1px solid var(--mid);
+      padding: 2rem 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .footer-copy { font-size: 0.8rem; color: var(--dim); }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-size: 0.8rem; color: var(--dim); text-decoration: none; }
+    .footer-links a:hover { color: var(--white); }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      .hero { padding: 120px 1.5rem 3rem; }
+      section { padding: 3rem 1.5rem; }
+      .price-strip { padding: 1.5rem; gap: 1.5rem; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">The <span>E-Scooter</span> Doc</a>
+  <ul>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#how">Process</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="motors.html">Motors</a></li>
+    <li><a href="ebike.html">E-Bikes</a></li>
+    <li><a href="display.html">Display</a></li>
+    <li><a href="frame.html">Frame</a></li>
+    <li><a href="index.html#contact" class="nav-cta">💬 Book via WhatsApp</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="hero-eyebrow">E-Scooter & E-Bike Battery Repair — Peterborough</p>
+  <h1 class="hero-title">Battery dead?<br><em>We rebuild,<br>repair or replace.</em></h1>
+  <p class="hero-sub">From a dead cell to a full custom build — battery diagnostics, cell replacement, BMS repair, balancing and charging port fixes. Don't bin it before we've had a look.</p>
+  <div class="hero-btns">
+    <a href="https://wa.me/447597772452?text=Hi%2C%20I%20need%20help%20with%20my%20e-scooter%20battery" target="_blank" class="btn-primary">💬 WhatsApp us</a>
+    <a href="tel:07597772452" class="btn-secondary">📞 Call David</a>
+  </div>
+</div>
+
+<!-- PRICE STRIP -->
+<div class="price-strip">
+  <div class="price-item">
+    <div class="price-label">Battery Diagnostic</div>
+    <div class="price-val">£20*</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Cell Balancing</div>
+    <div class="price-val">From £40</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Charging Port</div>
+    <div class="price-val">From £30</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">BMS Repair/Replace</div>
+    <div class="price-val">From £60</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Pack Rebuild</div>
+    <div class="price-val">From £40</div>
+  </div>
+  <div class="price-item">
+    <div class="price-label">Custom Battery Build</div>
+    <div class="price-val">POA</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section>
+  <p class="section-label">What we do</p>
+  <h2 class="section-title">Full battery service — repair, rebuild or replace</h2>
+
+  <div class="parts-note">
+    <strong>Parts availability:</strong> Common BMS units, cells and charging ports are stocked for popular models. Less common parts are sourced from UK suppliers where possible. Some specialist components may need to be sourced internationally — we'll always let you know before any work begins.
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">🔍</span>
+      <div class="service-name">Battery Diagnostic</div>
+      <p class="service-desc">Not sure if it's the battery or something else? We run a full diagnostic — checking voltage, cell health, BMS output and charging circuit — and tell you exactly what's wrong before any work starts. Diagnostic fee is included in the repair cost if you go ahead.</p>
+      <div class="service-price">£20 — included in repair cost if you proceed</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">⚖️</span>
+      <div class="service-name">Cell Balancing</div>
+      <p class="service-desc">Unbalanced cells cause reduced range, unexpected shutdowns and accelerated degradation. We balance the cells across the pack to restore even charge distribution and bring back lost range.</p>
+      <div class="service-price">From £40</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔌</span>
+      <div class="service-name">Charging Port Replacement</div>
+      <p class="service-desc">Loose, damaged or corroded charging ports are one of the most common battery issues. We replace the port and check the charging circuit to make sure everything is working correctly.</p>
+      <div class="service-price">From £30</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🧠</span>
+      <div class="service-name">BMS Repair or Replacement</div>
+      <p class="service-desc">The Battery Management System controls charging, discharging and cell protection. A faulty BMS can cause the battery to cut out, refuse to charge or drain too fast. We repair or replace it depending on the fault.</p>
+      <div class="service-price">From £60</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🔋</span>
+      <div class="service-name">Cell Replacement & Pack Rebuild</div>
+      <p class="service-desc">Dead or weak cells don't mean you need a new battery. We open the pack, identify and replace the failed cells, rebalance and reseal. Significantly cheaper than a full replacement and extends pack life.</p>
+      <div class="service-price">From £40</div>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">📦</span>
+      <div class="service-name">Full Battery Replacement</div>
+      <p class="service-desc">When the pack is beyond economic repair, we source and fit a direct replacement. We stock or can source replacement packs for most popular models — ask about availability for your scooter.</p>
+      <div class="service-price">POA</div>
+    </div>
+  </div>
+
+  <!-- CUSTOM BATTERY -->
+  <div class="custom-battery-block">
+    <h3>🏗️ <span>Custom Battery Builds</span> — Better than stock</h3>
+    <p>Through our trusted UK-based battery builder partner, we can supply a custom battery pack built specifically for your scooter — designed around your actual deck space, power requirements and riding style.</p>
+    <p>Custom builds use high-quality cells and are assembled to order in the UK. In most cases they outperform the original stock battery for a similar or lower price than a brand replacement.</p>
+    <ul class="custom-bullet-list">
+      <li>Built to fit your specific deck dimensions</li>
+      <li>Specced to your power and range requirements</li>
+      <li>Quality cells — not the cheapest available</li>
+      <li>UK-assembled by a specialist battery builder</li>
+      <li>Better performance than many stock packs</li>
+      <li>Often cheaper than a genuine OEM replacement</li>
+    </ul>
+    <p style="color:#F2F0EB; font-weight:600; margin-bottom:0.75rem;">Two ways to get yours:</p>
+    <ul class="custom-bullet-list" style="margin-bottom:1.5rem;">
+      <li><strong style="color:#F2F0EB;">Let us handle it</strong> — bring your scooter to us, we'll measure up, spec the right pack and fit it once it arrives. Hassle-free, fully fitted.</li>
+      <li><strong style="color:#F2F0EB;">Order it yourself</strong> — prefer to deal direct? Order straight from our battery builder on eBay and fit it yourself or bring it to us for fitting.</li>
+    </ul>
+    <div style="display:flex; flex-wrap:wrap; gap:0.75rem;">
+      <a href="https://wa.me/447597772452?text=Hi%2C%20I%27m%20interested%20in%20a%20custom%20battery%20build%20for%20my%20e-scooter" target="_blank" class="btn-primary" style="display:inline-flex;">💬 Ask us about a custom build</a>
+      <a href="https://www.ebay.co.uk/usr/custom-batteries-4-you" target="_blank" class="btn-secondary" style="display:inline-flex;">🔋 Order direct on eBay</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding-top: 0;">
+  <p class="section-label">Common questions</p>
+  <h2 class="section-title">Battery repair FAQ</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">My scooter won't charge — is it definitely the battery?</div>
+      <div class="faq-a">Not necessarily. A charging fault can come from the port, the charger, the BMS or the cells themselves. We run a diagnostic first to pinpoint the exact cause before recommending any repair — £20, included in the repair cost if you go ahead. No guesswork, no unnecessary parts.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">My range has dropped significantly — can it be fixed?</div>
+      <div class="faq-a">In many cases yes. Reduced range is usually caused by degraded or unbalanced cells. Balancing can restore lost range on packs that aren't too far gone. If individual cells have failed, replacing just those cells is often enough to bring the pack back to good performance without replacing the whole battery.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is it worth repairing my battery or should I just replace it?</div>
+      <div class="faq-a">Depends on the fault. A bad BMS, a failed charging port or a few dead cells are all economical to fix. If the majority of cells have degraded significantly, a full replacement or custom build usually makes more sense. We'll give you an honest assessment after the diagnostic.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What is a BMS and why does it matter?</div>
+      <div class="faq-a">BMS stands for Battery Management System. It's the electronics board inside your battery pack that controls how it charges, discharges and protects the cells from damage. A faulty BMS can cause the battery to cut out under load, refuse to charge, drain faster than normal or in some cases damage the cells. It's one of the most common battery faults we see.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How does a custom battery build work?</div>
+      <div class="faq-a">We take your scooter's deck measurements, note your current battery spec and discuss your range and power requirements. We then work with our UK battery builder to spec the right pack — right voltage, capacity and form factor to fit your scooter. The pack is built to order and we fit it once it arrives. Get in touch to start the process.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you offer a warranty on battery repairs?</div>
+      <div class="faq-a">Yes — all parts and labour carry our standard 90-day warranty.</div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section style="padding-top: 0;">
+  <p class="section-label">Compatible models</p>
+  <h2 class="section-title">We work on all major brands</h2>
+  <p style="color: var(--dim); margin-bottom: 1rem;">Common parts stocked for popular models. Less common parts sourced to order — call ahead to check availability for your model.</p>
+  <div class="brands-wrap">
+    <span class="brand-tag">Xiaomi</span>
+    <span class="brand-tag">Ninebot</span>
+    <span class="brand-tag">Segway</span>
+    <span class="brand-tag">Pure Electric</span>
+    <span class="brand-tag">Dualtron</span>
+    <span class="brand-tag">KuKirin</span>
+    <span class="brand-tag">Kaabo</span>
+    <span class="brand-tag">Inokim</span>
+    <span class="brand-tag">Vsett</span>
+    <span class="brand-tag">Zero</span>
+    <span class="brand-tag">Apollo</span>
+    <span class="brand-tag">Bosch e-bikes</span>
+    <span class="brand-tag">Bafang e-bikes</span>
+    <span class="brand-tag">Shimano Steps</span>
+    <span class="brand-tag">Most other brands</span>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <h2>Battery trouble? Don't bin it yet.</h2>
+  <p>Free diagnostic. Honest advice. We'll tell you if it's worth fixing.</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/447597772452?text=Hi%2C%20I%20need%20help%20with%20my%20e-scooter%20battery" target="_blank" class="btn-primary" style="background:#25D366; color:#fff;">💬 WhatsApp us</a>
+    <a href="tel:07597772452" class="btn-primary">📞 Call David</a>
+    <a href="https://tally.so/r/Xx9rZ4" target="_blank" class="btn-secondary">🔋 Get a free quote</a>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section>
+  <p class="section-label">Find us</p>
+  <h2 class="section-title">Based in Peterborough</h2>
+  <div class="contact-grid">
+    <div class="contact-item">
+      <div class="contact-item-label">Phone / WhatsApp</div>
+      <div class="contact-item-val">07597 772452</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Email</div>
+      <div class="contact-item-val">info@escooterdoc.co.uk</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Location</div>
+      <div class="contact-item-val">Westbury Dr, Peterborough PE7 8NQ</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Hours</div>
+      <div class="contact-item-val">Open 7 days a week</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-copy">© 2026 The EScooter Doc. All rights reserved.</span>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html">← Back to main site</a>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/447597772452?text=Hi%2C%20I%20need%20help%20with%20my%20e-scooter%20battery" target="_blank"
+   style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;
+          background:#25D366;color:#fff;
+          width:58px;height:58px;border-radius:50%;
+          display:flex;align-items:center;justify-content:center;
+          font-size:1.6rem;box-shadow:0 4px 16px rgba(0,0,0,0.35);
+          text-decoration:none;transition:transform 0.2s;"
+   onmouseover="this.style.transform='scale(1.1)'"
+   onmouseout="this.style.transform='scale(1)'"
+   aria-label="Chat on WhatsApp">&#128172;</a>
+
+</body>
+</html>
